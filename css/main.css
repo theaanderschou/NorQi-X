@@ -24,12 +24,22 @@
 
 
 
-
-
 /* HERO SECTION */
 #hero {
-height: 100vh;
-background-color: teal;
+    height: 100vh;
+    background-color: teal;
+}
+
+.logo-line {
+    height: 170px;
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+}
+
+.logo-line img {
+    width: 130px;
+    margin: 20px 0 0 20px
 }
 
 .herovid video{
@@ -40,6 +50,63 @@ background-color: teal;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.hero-title {
+width: 100%;
+height: 100%;
+position: absolute;
+text-align: center;
+margin-top: 80px;
+}
+
+.hero-title img {
+    width: 500px;
+    height: 500px;
+}
+
+.hero-btn {
+    text-align: center;
+  }
+
+  .button1 {
+    border-radius: 20px;
+    background-color: #56a0d3;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    width: 250px;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    top: -325px;
+    grid-column: 1/1;
+    grid-row: 3/3;
+  }
+
+  .button1 span {
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+  }
+
+  .button1 span:after {
+    content: url(img/ylw-arrow.png);
+    position: absolute;
+    opacity: 0;
+    transition: 0.2s;
+  }
+
+  .button1:hover span {
+    padding-right: 30px;
+  }
+
+  .button1:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 /* END OF HERO SECTION */
 
 
