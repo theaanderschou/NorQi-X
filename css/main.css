@@ -24,6 +24,137 @@
 
 
 
+/* NAV BAR */
+nav {
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    width: 70px;
+    height: 100vh;
+    z-index: 2;
+    background-color: #5CB720;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
+  .burger {
+    display: block;
+    height: 100px;
+    width: 40px;
+    position: relative;
+    margin-left: 17.5px;
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  .menu {
+    position: absolute;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    top: 30px;
+  }
+
+  .burger .line1,
+  .burger .line2,
+  .burger .line3 {
+    width: 40px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 1px;
+    margin-top: 7px;
+    transition: all 0.3s ease;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-links {
+    position: absolute;
+    left: 0px;
+    height: 89vh;
+    top: 11vh;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    width: 100%;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+    font-size: 0.875rem;
+  }
+
+  .nav-links li {
+    opacity: 0;
+    width: 100%;
+    transition: 0.2s;
+    text-align: left;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: "Roboto Condensed",sans-serif,arial;
+    position: relative;
+    top: -15px;
+  }
+
+  .nav-links li:hover {
+    border-bottom: none;
+  }
+
+  .nav-links a {
+    color: #fff;
+    width: 100%;
+    display: none;
+    margin-left: 5%;
+    margin-top: 15px;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+    background-color: #303030;
+    color: #fff;
+  }
+
+  .nav-active a {
+    display: block;
+  }
+
+  .nav-active li:hover {
+    background: rgba(219, 216, 216, 0.15);
+  }
+
+  .nav-links li:hover a {
+    color: #303030;
+    font-weight: 700;
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+/* END OF NAV BAR */
+
+
+
+
 /* HERO SECTION */
 #hero {
     height: 95vh;
