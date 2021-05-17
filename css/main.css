@@ -247,9 +247,8 @@ nav {
 
 /* PRODUCT DRAWING SECTION */
 #product-drawings {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
-    background-color: pink;
 }
 
 .product-drawings-header {
@@ -268,42 +267,58 @@ nav {
 }
 
 .product-container {
-  height: 40vh;
-  width: 95%;
+  height: 50vh;
+  width: 80%;
   margin: 0px auto;
   display: grid;
-  grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100%;
   position: relative;
-  top: -150px;
+  top: -200px;
 }
 
 .prod1 {
   grid-column: 1/1;
   grid-row: 1/1;
   text-align: center;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 20% 20% 20% 20% 20%;
 }
 
 .prod2 {
-    grid-column: 1/1;
+    grid-column: 2/2;
     grid-row: 1/1;
     text-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 20% 20% 20% 20% 20%;
 }
 
 .prod3 {
-    grid-column: 1/1;
+    grid-column: 3/3;
     grid-row: 1/1;
     text-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.product-text {
+  height: 30vh;
+  width: 80%;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100%;
+  position: relative;
+  top: -270px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.product-text h1 {
+  font-size: 30px;
+}
+
+.product-text p {
+  margin-top: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.product-text a {
+  color: #5CB720;
 }
 /* END OF PRODUCT DRAWING SECTION */
 
@@ -311,6 +326,59 @@ nav {
 
 
 
+/* CASE SECTION */
+#cases {
+  height: 90vh;
+  width: 100%;
+  background-color: rgb(49, 51, 49);
+}
+
+/* END OF CASE SECTION */
+
+
+
+
+/* STATEMENT SECTION */
+#statements {
+  height: 90vh;
+  width: 100%;
+  background-color: #fff;
+}
+
+/* END OF STATEMENT SECTION */
+
+
+
+
+/* CUSTOMERS SECTION */
+#customers {
+  height: 90vh;
+  width: 100%;
+  background-color: #fff;
+}
+
+/* END OF CUSTOMERS SECTION */
+
+
+/* INSTAGRAM SECTION */
+#instagram-gallery {
+  height: 90vh;
+  width: 100%;
+  background-color: #fff;
+}
+
+/* END OF INSTAGRAM SECTION */
+
+
+
+/* FOOTER SECTION */
+footer {
+  height: 90vh;
+  width: 100%;
+  background-color: #5CB720;
+}
+
+/* END OF FOOTER SECTION */
 
 
 /* STYLEGUIDE */
