@@ -196,9 +196,10 @@ nav {
 }
 
 .herovid video{
-    height: 105%;
+    height: 100%;
     min-width: 100%;
     position: absolute;
+    left: -2%;
 }
 
 .hero-title {
@@ -307,11 +308,6 @@ nav {
   top: -100px;
   font-family: 'Quicksand', sans-serif;
   right: 2%;
-
-}
-
-.product-text h1 {
-  font-size: 30px;
 }
 
 .product-text p {
@@ -338,25 +334,66 @@ nav {
 #manual-section {
   height: 90vh;
   width: 100%;
-  background-color: #E9E9E9;
+  background-color: #fafafa;
+}
+
+.model-textbox {
+  float: left;
+  height: 100%;
+  width: 40%;
 }
 
 .model-text {
-  float: left;
-  height: 100%;
-  width: 50%;
-  background-color: teal;
+  height: 30%;
+  width: 70%;
+  margin: 200px auto 0 auto;
+}
+
+.model-text h1 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.model-text p {
+  text-align: justify;
+}
+
+.manual-btn {
+  height: 60px;
+  width: 300px;
+  margin: 50px auto 0 auto;
+}
+
+.manual-button {
+  height: 60px;
+  width: 300px;
+  border-radius: 30px;
+  background-color: #5CB720;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.manual-button:hover {
+  font-weight: 600;
+  background-color: #458a18;
 }
 
 .model-pic {
   float: left;
   height: 100%;
-  width: 50%;
-  background-color: PINK;
+  width: 60%;
 }
 
 .model-pic img {
-  height: 80%;
+  height: 90%;
   width: 100%;
 }
 /* END OF MANUAL SECTION */
@@ -372,9 +409,9 @@ nav {
 }
 
 .cases-container {
-  height: 70vh;
+  height: 60vh;
   width: 90%;
-  margin: 0px auto;
+  margin: auto auto;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
