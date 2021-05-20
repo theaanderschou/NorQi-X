@@ -438,7 +438,7 @@ body {
     height: 100%;
     width: 23%;
     background-color: #fff;
-    border-radius: 15px;
+    border-radius: 25px;
     position: relative;
     overflow: hidden;
 }
@@ -463,7 +463,28 @@ body {
     line-height: 1.2;
 }
 
+.case-btn {
+    width: 30%;
+    height: 60px;
+    background-color: teal;
+    margin-top: 150px;
+    margin-right: 8%;
+    float: right;
+}
 
+.case-btn p {
+    width: 100px;
+    background-color: pink;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.case-btn img {
+    width: 60px;
+    background-color: teal;
+    margin-left: 200px;
+}
 /* END OF CASE SECTION */
 
 
