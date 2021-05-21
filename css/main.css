@@ -250,7 +250,6 @@ body {
     font-weight: 600;
     background-color: #458a18;
 }
-
 /* END OF HERO SECTION */
 
 
@@ -496,29 +495,6 @@ body {
     width: 60px;
     float: left;
 }
-/*
-.case-btn {
-    width: 30%;
-    height: 60px;
-    background-color: teal;
-    margin-top: 150px;
-    margin-right: 8%;
-    float: right;
-}
-
-.case-btn p {
-    width: 100px;
-    background-color: pink;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 20px;
-}
-
-.case-btn img {
-    width: 60px;
-    background-color: teal;
-    margin-left: 200px;
-}
 /* END OF CASE SECTION */
 
 
@@ -526,11 +502,49 @@ body {
 
 /* STATEMENT SECTION */
 #statements {
-    height: 90vh;
+    height: 105vh;
     width: 100%;
-    background-color: #fff;
 }
 
+.statement-img {
+    width: 100%;
+    float: left;
+}
+
+.statement-img img{
+    max-width: 100%;    
+}
+
+.statement-container {
+    width: 100%;
+    height: 27vh;
+    float: left;
+}
+
+.statement-container h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.statement-container p {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1.3em;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.statement-dude {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.statement-dude img {
+    width: 300px;
+}
 /* END OF STATEMENT SECTION */
 
 
@@ -538,21 +552,64 @@ body {
 
 /* CUSTOMERS SECTION */
 #customers {
-    height: 90vh;
-    width: 100%;
-    background-color: #fff;
+    height: 28vh;
+    width: 95%;
+    margin: 0 auto;
 }
 
+.customers-container img {
+    height: 220px;
+    margin: 0 auto;
+}
 /* END OF CUSTOMERS SECTION */
 
 
 /* INSTAGRAM SECTION */
 #instagram-gallery {
-    height: 90vh;
+    height: 50vh;
     width: 100%;
-    background-color: #fff;
+    background-color: rgba(236, 140, 140, 0.39);
 }
 
+.ig-gallery {
+    width: 88%;
+    background-color: orange;
+    margin: 0 auto;
+}
+
+.ig-gallery img{
+    max-width: 95%; 
+    margin: 0 auto;
+}
+
+.hero-btn {
+    height: 60px;
+    width: 470px;
+    position: relative;
+    margin: 0 auto;
+    top: 650px;
+}
+
+.hero-button {
+    height: 60px;
+    width: 470px;
+    border-radius: 30px;
+    background-color: #5CB720;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.hero-button:hover {
+    font-weight: 600;
+    background-color: #458a18;
+}
 /* END OF INSTAGRAM SECTION */
 
 
