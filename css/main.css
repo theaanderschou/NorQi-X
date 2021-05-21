@@ -447,6 +447,16 @@ body {
     height: 50%;
     width: 100%;
     background: var(--accent);
+    overflow: hidden;
+    position: relative;
+}
+
+.case-image img {
+    width: 110%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
 
 .case-text {
