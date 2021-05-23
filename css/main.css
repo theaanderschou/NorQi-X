@@ -111,6 +111,7 @@ body {
     font-family: "Roboto Condensed", sans-serif, arial;
     position: relative;
     top: -15px;
+    padding-left: 10px;
 }
 
 .nav-links li:hover {
