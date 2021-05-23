@@ -1,0 +1,124 @@
+&lt;&lt;&lt;&lt;<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+    <link rel="stylesheet" type="text/css" href="styleguide.css">
+
+    <title>Styleguide | NORQi</title>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+      <div class="logo">
+          <a href="#intro">
+              <img src="./img/NORQI-Logo.svg" alt="logo">
+          </a>
+
+          <div class="logo-line"></div>
+
+          <div class="logo-text">
+              <p>STYLEGUIDE</p>
+          </div>
+      </div>
+
+      <ul class="nav-links">
+          <li>
+              <a href="#intro">Intro</a>
+          </li>
+          <li>
+              <a href="#logo">Logo</a>
+          </li>
+          <li>
+              <a href="#typo">Typografi</a>
+          </li>
+          <li>
+              <a href="#color">Farver</a>
+          </li>
+          <li>
+              <a href="#navi">Navigation</a>
+          </li>
+          <li>
+              <a href="#forms">Forms</a>
+          </li>
+          <li>
+              <a href="#btns">Knapper</a>
+          </li>
+          <li>
+              <a href="#icons">Ikoner</a>
+          </li>
+      </ul>
+
+      <div class="burger">
+          <div class="menu">MENU</div>
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+      </div>
+  </nav>
+
+  <script src="burger.js" defer></script>
+  <!-- End of Nav -->
+
+  <!-- Intro Section -->
+  <section id="intro">
+      <div class="intro-text">
+          <h1>NORQi Styleguide</h1>
+          <p>Vi er 3 studerende fra Multimediedesign på UCL, der arbejder på vores 2. semester eksamen,
+              en eksamen vedrørende NORQi's brugerflade, hvorfor vi har udviklet denne styleguide.
+              Denne living styleguide er en videre guide til
+              designet på vores løsning til NORQi, og indeholder
+              derfor både design-elementer samt code snippets.</p>
+      </div>
+  </section>
+  <!-- End of Intro Section -->
+
+  <!-- Logo Section -->
+  <section id="logo">
+
+      <div class="logo-head">
+          <h2>Logo</h2>
+          <div class="logo-line2"></div>
+      </div>
+
+      <div class="logo-img">
+          <img src="./img/NORQI-Logo.svg" alt="logo">
+      </div>
+
+      <div class="logo-text2">
+          <b>Anvendelse:</b> Logo skal bruges på siden med 3D manualen, placeret til venstre i navigationsbaren.
+      </div>
+
+      <div class="code-box-logo1">
+          <h1>Code Snippet (HTML):</h1>
+          <pre>
+              <code class="code">
+&lt;div class="logo"&gt;
+  &lt;a href="#intro"&gt;
+      &lt;img src="./img/ur-logo.png" alt="logo"&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+              </code>
+          </pre>
+      </div>
+
+      <div class="code-box-logo2">
+          <h1>Code Snippet (CSS):</h1>
+          <pre>
+              <code class="code">
+.logo {
+  display: flex;
+  flex: 2;
+  width: 40%;
+  margin-left: 7%;
+  margin-right: 3%;
+}
+
+.logo img {
+  width: 200px;
+  padding-bottom: 10px;
+}
+              </code>
+          </pre>
+      </div>
