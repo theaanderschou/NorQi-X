@@ -409,7 +409,7 @@ body {
 
 /* CASE SECTION */
 #cases {
-    height: 95vh;
+    height: 100vh;
     width: 100%;
     background-color: rgb(49, 51, 49);
 
@@ -512,7 +512,7 @@ body {
     width: 100%;
     height: 27vh;
     float: left;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .statement-container h2 {
@@ -547,12 +547,12 @@ body {
 /* CUSTOMERS SECTION */
 #customers {
     height: 28vh;
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
 }
 
 .customers-container img {
-    height: 220px;
+    width: 95%;
     margin: 0 auto;
 }
 /* END OF CUSTOMERS SECTION */
