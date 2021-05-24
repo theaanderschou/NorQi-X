@@ -243,6 +243,19 @@ body {
     font-weight: 600;
     background-color: #458a18;
 }
+
+@media only screen and (max-width: 1920px and min-width: 1480px) {
+    .hero-title img {
+        width: 600px;
+        height: 600px;
+    }
+
+    .hero-btn {
+        height: 60px;
+        width: 470px;
+        top: 800px;
+    }
+}
 /* END OF HERO SECTION */
 
 
