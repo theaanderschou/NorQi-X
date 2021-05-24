@@ -613,7 +613,19 @@ body {
 
 @media only screen and (max-width: 500px) {
     #product-drawings {
-        height: 195vh;
+        height: 170vh;
+    }
+
+    .prod1 {
+        height: 50vh;
+    }
+    
+    .prod2 {
+        height: 50vh;
+    }
+
+    .prod3 {
+        height: 50vh;
     }
 }
 
@@ -640,9 +652,9 @@ body {
 }
 
 .model-text {
-    height: 30%;
+    height: 20vh;
     width: 70%;
-    margin: 200px auto 0 auto;
+    margin: 300px auto 0 auto;
 }
 
 .model-text h1 {
@@ -698,31 +710,68 @@ body {
 }
 
 @media only screen and (max-width: 1920px) {
-
+    #manual-section {
+        height: 90vh;
+        background-color: orange;
+    }
 }
 
 @media only screen and (max-width: 1800px) {
-
+    #manual-section {
+        height: 80vh;
+    }
 }
 
 @media only screen and (max-width: 1500px) {
-
+    #manual-section {
+        height: 70vh;
+    }
 }
 
 @media only screen and (max-width: 1370px) {
-
+    .model-text {
+        margin: 200px auto 0 auto;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
-
+    #manual-section {
+        height: 60vh;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
-
+    #manual-section {
+        height: 50vh;
+    }
+    
+    .model-text {
+        margin: 100px auto 0 auto;
+    }
 }
 
 @media only screen and (max-width: 979px) {
+    #manual-section {
+        height: 100vh;
+    }
 
+    .model-textbox {
+        width: 100%;
+    }
+
+    .model-pic {
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    
+    .model-pic img {
+        width: 80%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 45%;
+        left: 50%;
+    }
 }
 
 @media only screen and (max-width: 700px) {
