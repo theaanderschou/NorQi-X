@@ -171,6 +171,23 @@ body {
     transform: rotate(45deg) translate(-5px, -5px);
 }
 
+@media only screen and (max-width: 550px) {
+    nav {
+        width: 50px;
+        height: 100vh;
+    }
+
+    .burger .line1,
+    .burger .line2,
+    .burger .line3 {
+        width: 30px;
+        height: 6px;
+        background-color: #fff;
+        border-radius: 1px;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+}
 /* END OF NAV BAR */
 
 
@@ -195,7 +212,7 @@ body {
 }
 
 .herovid video {
-    height: 100%;
+    height: 110%;
     min-width: 100%;
     position: absolute;
     left: -2%;
@@ -216,7 +233,7 @@ body {
 
 .hero-btn {
     height: 60px;
-    width: 470px;
+    width: 320px;
     position: relative;
     margin: 0 auto;
     top: 650px;
@@ -225,7 +242,7 @@ body {
 
 .hero-button {
     height: 60px;
-    width: 470px;
+    width: 320px;
     border-radius: 30px;
     background-color: #5CB720;
     border: none;
@@ -243,12 +260,107 @@ body {
     font-weight: 600;
     background-color: #458a18;
 }
+
+@media only screen and (max-width: 1920px) and (min-width: 980px) {
+    .hero-title img {
+        width: 800px;
+        height: 800px;
+    }
+
+    .hero-btn {
+        top: 850px;
+    }
+}
+
+@media only screen and (max-width: 979px) {
+    .hero-title img {
+        width: 600px;
+        height: 600px;
+    }
+
+    .hero-btn {
+        top: 650px;
+    }
+
+    .herovid video {
+        height: 80%;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .hero-title img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .hero-btn {
+        top: 500px;
+    }
+
+    .herovid video {
+        height: 60%;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .hero-btn {
+        height: 40px;
+        width: 250px;
+    }
+
+    .hero-button {
+        height: 40px;
+        width: 250px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .hero-title img {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .hero-btn {
+        top: 450px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .hero-title img {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .hero-btn {
+        top: 400px;
+    }
+
+    .herovid video {
+        height: 50%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .hero-title img {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .hero-btn {
+        top: 350px;
+    }
+
+    .herovid video {
+        height: 45%;
+    }
+}
 /* END OF HERO SECTION */
 
 
 /* PRODUCT DRAWING SECTION */
 #product-drawings {
-    height: 110vh;
+    height: 130vh;
     width: 100%;
 }
 
@@ -257,7 +369,7 @@ body {
     width: 600px;
     text-align: center;
     margin: 0 auto;
-    padding-top: 100px;
+    padding-top: 150px;
     padding-bottom: -10px;
     position: relative;
     text-transform: uppercase;
@@ -275,7 +387,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100%;
     position: relative;
-    top: -150px;
+    top: -200px;
     right: 2%;
 }
 
@@ -409,7 +521,7 @@ body {
 
 /* CASE SECTION */
 #cases {
-    height: 95vh;
+    height: 100vh;
     width: 100%;
     background-color: rgb(49, 51, 49);
 
@@ -479,7 +591,7 @@ body {
     color: #fff;
     text-transform: uppercase;
     font-size: 20px;
-    padding-top: 13px;
+    padding-top: 18px;
     float: left;
     margin-right: 20px;
 }
@@ -495,7 +607,7 @@ body {
 
 /* STATEMENT SECTION */
 #statements {
-    height: 105vh;
+    height: 110vh;
     width: 100%;
 }
 
@@ -505,20 +617,21 @@ body {
 }
 
 .statement-img img{
-    max-width: 100%;    
+    max-width: 100%;  
 }
 
 .statement-container {
     width: 100%;
     height: 27vh;
     float: left;
+    margin-bottom: 60px;
 }
 
 .statement-container h2 {
     text-align: center;
     text-transform: uppercase;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 20px;
     font-size: 32px;
 }
 
@@ -546,12 +659,12 @@ body {
 /* CUSTOMERS SECTION */
 #customers {
     height: 28vh;
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
 }
 
 .customers-container img {
-    height: 220px;
+    width: 95%;
     margin: 0 auto;
 }
 /* END OF CUSTOMERS SECTION */
@@ -559,7 +672,7 @@ body {
 
 /* INSTAGRAM SECTION */
 #instagram-gallery {
-    height: 45vh;
+    height: 50vh;
     width: 100%;
 }
 
@@ -588,7 +701,7 @@ body {
 
 /* FOOTER SECTION */
 footer {
-    height: 40vh;
+    height: 50vh;
     width: 100%;
     background-color: #5CB720;
 }

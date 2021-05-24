@@ -182,7 +182,27 @@ madtemperaturen.</p>
 
 function runVid2() {
 
-    infoTitle.innerHTML = "<span>02</span> Knappelader";
+    infoTitle.innerHTML = "<span>02</span> Trykknappanel";
+    
+    infoText.innerHTML = `
+
+    <div onclick="dropDown()" class="info-dropdown-header">Startknap:<img class="dropdown-arrow" src="img/arrow-white.svg"></div>
+    <div class="info-dropdown-content">
+        <p>Startknap. Starter gryden. Der skal komme hvidt lys i startknappen når gyden er tændt.<br>
+Der går ca. 30 sekunder før systemet og dermed skærmen er klar til drift.</p>
+    </div>
+
+<div onclick="dropDown()" class="info-dropdown-header">Stopknap:<img class="dropdown-arrow" src="img/arrow-white.svg"></div>
+    <div class="info-dropdown-content">
+        <p>Slukker for alt i gryden.</p>
+    </div>
+
+<div onclick="dropDown()" class="info-dropdown-header">Slowmixknap. (Ekstraudstyr):<img class="dropdown-arrow" src="img/arrow-white.svg"></div>
+    <div class="info-dropdown-content">
+        <p>Betjening af omrører med begrænset hastighed, når låget er åbent. Omrøreren kører så længe, der holdes på knappen.</p>
+    </div>
+
+`;
 
     source.setAttribute('src', 'video/buttons.mp4');
     video.load();
