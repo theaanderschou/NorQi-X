@@ -171,6 +171,23 @@ body {
     transform: rotate(45deg) translate(-5px, -5px);
 }
 
+@media only screen and (max-width: 550px) {
+    nav {
+        width: 50px;
+        height: 100vh;
+    }
+
+    .burger .line1,
+    .burger .line2,
+    .burger .line3 {
+        width: 30px;
+        height: 6px;
+        background-color: #fff;
+        border-radius: 1px;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+}
 /* END OF NAV BAR */
 
 
@@ -216,7 +233,7 @@ body {
 
 .hero-btn {
     height: 60px;
-    width: 470px;
+    width: 320px;
     position: relative;
     margin: 0 auto;
     top: 650px;
@@ -225,7 +242,7 @@ body {
 
 .hero-button {
     height: 60px;
-    width: 470px;
+    width: 320px;
     border-radius: 30px;
     background-color: #5CB720;
     border: none;
@@ -244,18 +261,60 @@ body {
     background-color: #458a18;
 }
 
-@media only screen and (max-width: 1920px and min-width: 1480px) {
+@media only screen and (max-width: 1920px) and (min-width: 980px) {
+    .hero-title img {
+        width: 800px;
+        height: 800px;
+    }
+
+    .hero-btn {
+        top: 850px;
+    }
+}
+
+@media only screen and (max-width: 979px) {
     .hero-title img {
         width: 600px;
         height: 600px;
     }
 
     .hero-btn {
-        height: 60px;
-        width: 470px;
-        top: 800px;
+        top: 650px;
+    }
+
+    .herovid video {
+        height: 80%;
     }
 }
+
+@media only screen and (max-width: 770px) {
+    .hero-title img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .hero-btn {
+        top: 500px;
+    }
+
+    .herovid video {
+        height: 60%;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .hero-btn {
+        height: 40px;
+        width: 250px;
+    }
+
+    .hero-button {
+        height: 40px;
+        width: 250px;
+        font-size: 12px;
+    }
+}
+
 /* END OF HERO SECTION */
 
 
