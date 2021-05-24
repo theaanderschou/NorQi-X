@@ -1,4 +1,4 @@
-&lt;&lt;&lt;&lt;<html lang="en">
+&lt;&lt;&lt;&lt;&lt;<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -38,9 +38,6 @@
           </li>
           <li>
               <a href="#navi">Navigation</a>
-          </li>
-          <li>
-              <a href="#forms">Forms</a>
           </li>
           <li>
               <a href="#btns">Knapper</a>
@@ -87,18 +84,20 @@
       </div>
 
       <div class="logo-text2">
-          <b>Anvendelse:</b> Logo skal bruges på siden med 3D manualen, placeret til venstre i navigationsbaren.
+          <b>Anvendelse:</b> Logo skal bruges på alle siderne, placeret til venstre i navigationsbaren.
       </div>
 
       <div class="code-box-logo1">
           <h1>Code Snippet (HTML):</h1>
           <pre>
               <code class="code">
-&lt;div class="logo"&gt;
-  &lt;a href="#intro"&gt;
-      &lt;img src="./img/ur-logo.png" alt="logo"&gt;
+
+&lt;div class="logo-line"&gt;
+  &lt;a href="index.html"&gt;
+    &lt;img src="img/NORQI-Logo.svg" alt="Logo"&gt;
   &lt;/a&gt;
 &lt;/div&gt;
+
               </code>
           </pre>
       </div>
@@ -107,18 +106,681 @@
           <h1>Code Snippet (CSS):</h1>
           <pre>
               <code class="code">
-.logo {
-  display: flex;
-  flex: 2;
-  width: 40%;
-  margin-left: 7%;
-  margin-right: 3%;
+.logo-line {
+  height: 170px;
+  width: 100%;
+  z-index: 2;
+  position: absolute;
 }
 
-.logo img {
-  width: 200px;
-  padding-bottom: 10px;
+.logo-line img {
+  width: 110px;
+  margin: 20px 0 0 20px;
 }
               </code>
           </pre>
       </div>
+
+    </section>
+    <!-- End of Logo Section -->
+
+
+
+    <!-- Typografi Section -->
+    <section id="typo">
+
+        <div class="typo-head">
+            <h2>Typografi</h2>
+            <div class="typo-line"></div>
+        </div>
+
+        <div class="typo-img">
+            <img src="./img/typo.png" alt="logo">
+        </div>
+
+        <div class="typo-text">
+            <b>Anvendelse:</b> H1 bruges på forsiden som den største overskrift,
+            H3 bliver brugt til underoverskrifterne. som f.eks. ved produktoversigten
+            og brødteksten er det resternede tekst.
+        </div>
+
+        <div class="code-box-typo2">
+            <h1>Code Snippet (CSS):</h1>
+            <pre>
+                <code class="code">
+html {
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 100%;
+}
+
+
+.product-text {
+    height: 30vh;
+    width: 80%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    position: relative;
+    top: -100px;
+    font-family: 'Quicksand', sans-serif;
+    right: 2%;
+}
+
+.product-text p {
+    margin-top: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+                </code>
+            </pre>
+        </div>
+
+    </section>
+
+    <!-- End of Typografi Section -->
+
+
+    <!-- Color Section -->
+    <section id="color">
+
+        <div class="col-head">
+            <h2>Farver</h2>
+            <div class="col-line"></div>
+        </div>
+
+        <div class="col-box">
+            <div class="hex-box1">
+                <p>HEX #FFFFFF</p>
+            </div>
+            <div class="hex-box2">
+                <p>HEX #313331</p>
+            </div>
+            <div class="hex-box3">
+                <p>HEX #5CB720</p>
+            </div>
+        </div>
+
+        <div class="col-text">
+            <b>Anvendelse:</b> De tre ovenstående farver bruges igennem hele websitedesignet,
+            og afspejler de farver NORQi bruger på deres hjemmeside.
+            Den hvide farve (HEX #FFFFFF) bruges til baggrund samt tekst elementer som har brug for en anden kontrastfarve, eksempelvis teksten på billeder.
+            Den mørkegrå farve (HEX #313331) bruges til al tekst på hvid baggrund, samt til at dele siden op i sektioner.
+            Den grønne farve (HEX #5CB720) bruges til knapper, links, logo, menu og ikoner samt i footeren.
+        </div>
+
+        <div class="code-box-col2">
+            <h1>Code Snippet (CSS):</h1>
+            <pre>
+                <code class="code">
+.hex-box1 {
+  height: 150px;
+  width: 33%;
+  position: relative;
+  top: -80px;
+  background-color: #fff;
+  border: 3px solid #303030;
+}
+
+.hex-box1 p {
+  font-size: .7rem;
+  text-align: center;
+  position: relative;
+  top: 45%;
+  color: #303030;
+}
+
+.hex-box2 {
+  height: 150px;
+  width: 33%;
+  position: relative;
+  top: -230px;
+  left: 33%;
+  background-color: #313331;;
+}
+
+.hex-box2 p {
+  font-size: .7rem;
+  text-align: center;
+  position: relative;
+  top: 45%;
+  color: #fff;
+}
+
+.hex-box3 {
+  height: 150px;
+  width: 33%;
+  position: relative;
+  top: -380px;
+  left: 65.5%;
+  background-color: #5CB720;
+  border: 3px solid #303030;
+}
+
+.hex-box3 p {
+  font-size: .7rem;
+  text-align: center;
+  position: relative;
+  top: 45%;
+  color: #fff;
+}
+                </code>
+            </pre>
+        </div>
+
+    </section>
+    <!-- End of Color Section -->
+
+
+    <!-- Navigation Section -->
+    <section id="navi">
+
+        <div class="navi-head">
+            <h2>Navigation</h2>
+            <div class="navi-line"></div>
+        </div>
+
+        <div class="navi-img">
+            <img src="./img/nav.png" alt="logo">
+        </div>
+
+        <div class="navi-text">
+            <b> Anvendelse:</b> Navigationsbaren kommer til til højre på alle siderne, da den skal hjælpe brugeren
+                med at navigere rundt. Navagationsbaren indeholder 5 punkter, der hver fører til en seperat side.
+                Som f.eks. vores 3D manual side, hvor man som bruger kan få en gennemgang af kipgryden og alle dens
+                funktioner.
+        </div>
+
+        <div class="code-box-navi1">
+            <h1>Code Snippet (HTML):</h1>
+            <pre>
+                <code class="code">
+
+&lt;nav&gt;
+
+  &lt;ul class="nav-links"&gt;
+    &lt;li&gt;
+        &lt;a href="index.html"&gt;Forside&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href="https://norqi.wp.side-walk.dk/produkter/"&gt;Produkter&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href="brugermanual/index.html"&gt;3D Brugermanual&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href="https://norqi.wp.side-walk.dk/support/"&gt;God viden&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href="https://norqi.wp.side-walk.dk/om-os/"&gt;Om NORQI&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href="https://norqi.wp.side-walk.dk/kontakt/"&gt;Kontakt os&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;/ul&gt;
+
+      &lt;div class="burger"&gt;
+          &lt;div class="line1"&gt;&lt;/div&gt;
+          &lt;div class="line2"&gt;&lt;/div&gt;
+          &lt;div class="line3"&gt;&lt;/div&gt;
+      &lt;/div&gt;
+&lt;/nav&gt;
+
+                </code>
+            </pre>
+        </div>
+
+        <div class="code-box-navi2">
+            <h1>Code Snippet (CSS):</h1>
+            <pre>
+                <code class="code">
+
+nav {
+  display: block;
+  justify-content: space-around;
+  align-items: center;
+  width: 70px;
+  height: 100vh;
+  z-index: 2;
+  background-color: #5CB720;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  transition: all 0.3s ease;
+}
+
+.burger {
+  display: block;
+  height: 100px;
+  width: 400px;
+  position: relative;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.burger .line1,
+.burger .line2,
+.burger .line3 {
+  width: 40px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 1px;
+  margin-top: 5px;
+  margin-left: 15px;
+}
+
+.nav-active .burger .line1,
+.nav-active .burger .line2,
+.nav-active .burger .line3 {
+  width: 40px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 1px;
+  margin-top: 1px;
+}
+
+.nav-active .menu {
+  position: absolute;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  top: 20px;
+  margin-left: 15px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.nav-links {
+  position: absolute;
+  left: -400px;
+  height: 100vh;
+  top: 17vh;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  width: 100%;
+  transform: translateX(100%);
+  transition: 0.5s ease-in;
+  font-size: 0.875rem;
+  list-style: none;
+}
+
+.nav-links li {
+  opacity: 0;
+  width: 100%;
+  transition: 0.2s;
+  text-align: left;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif, arial;
+  position: relative;
+  top: -15px;
+  padding-left: 10px;
+}
+
+.nav-links li:hover {
+  border-bottom: none;
+}
+
+.nav-links a {
+  color: #fff;
+  width: 100%;
+  display: none;
+  margin-left: 5%;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+.nav-active {
+  transform: translateX(0%);
+  background-color: #303030;
+  color: #fff;
+  width: 400px;
+}
+
+.nav-active a {
+  display: block;
+}
+
+.nav-active li:hover {
+  background: rgba(219, 216, 216, 0.15);
+}
+
+.nav-links li:hover a {
+  color: #303030;
+  font-weight: 700;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+                </code>
+            </pre>
+        </div>
+
+
+
+    </section>
+    <!-- End of Navigation Section -->
+
+
+    <!-- Buttons Section -->
+    <section id="btns">
+
+      <div class="btns-head">
+          <h2>Knapper</h2>
+          <div class="btns-line">
+            <div class="hero-btn">
+                <a href="brugermanual/index.html">
+                    <button class="hero-button"><span>Se hvordan kipgryden fungerer</span></button>
+                </a>
+            </div>
+
+            <div class="manual-btn">
+                <a href="manual.html">
+                    <button class="manual-button"><span>Se 3D manualen</span></button>
+                </a>
+            </div>
+
+            <div class="POI one hidden" onclick="runVid1()">
+                <p>1</p>
+            </div>
+
+            <a href="https://norqi.wp.side-walk.dk/artikler/">
+                <img class="btn-arrow" src="img/btn-arrow.png" alt="case-btn">
+            </a>
+
+        </div>
+      </div>
+
+        <div class="btns-text">
+            <b>Anvendelse:</b> Knapperne anvendes på alle siderne. De bruges til at føre brugeren hen til vores 3D manual,
+            samt guide brugeren igennem manualen.
+        </div>
+
+        <div class="code-box-btns1">
+            <h1>Code Snippet (HTML):</h1>
+            <pre>
+                <code class="code">
+
+&lt;div class="btns-line"&gt;
+  &lt;div class="hero-btn"&gt;
+      &lt;a href="brugermanual/index.html"&gt;
+          &lt;button class="hero-button"&gt;&lt;span&gt;Se hvordan kipgryden fungerer&lt;/span&gt;&lt;/button&gt;
+      &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class="manual-btn"&gt;
+      &lt;a href="manual.html"&gt;
+          &lt;button class="manual-button"&gt;&lt;span&gt;Se 3D manualen&lt;/span&gt;&lt;/button&gt;
+      &lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class="POI one hidden" onclick="runVid1()"&gt;
+      &lt;p&gt;1&lt;/p&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+                </code>
+            </pre>
+        </div>
+
+        <div class="code-box-btns2">
+            <h1>Code Snippet (CSS):</h1>
+            <pre>
+                <code class="code">
+
+.hero-btn {
+  height: 60px;
+  width: 470px;
+  position: relative;
+  margin: 0 auto;
+  top: 50px;
+  z-index: 2;
+  left: 50px;
+}
+
+.hero-button {
+  height: 60px;
+  width: 470px;
+  border-radius: 30px;
+  background-color: #5CB720;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.hero-button:hover {
+  font-weight: 600;
+  background-color: #458a18;
+}
+
+.manual-btn {
+  height: 60px;
+  width: 300px;
+  margin: 50px auto 0 auto;
+  position: relative;
+  top: 30px;
+  left: 140px;
+}
+
+.manual-button {
+  height: 60px;
+  width: 300px;
+  border-radius: 30px;
+  background-color: #5CB720;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.manual-button:hover {
+  font-weight: 600;
+  background-color: #458a18;
+}
+
+.POI {
+  height: 40px;
+  width: 40px;
+  border: 3px solid var(--accent);
+  position: absolute;
+  border-radius: 20px;
+  transition: .2s;
+  box-shadow: 0 0 10px var(--accent);
+  cursor: pointer;
+  background: rgba(255, 255, 255, 1);
+  z-index: 2;
+}
+
+.POI:hover {
+  background: var(--accent);
+}
+
+.POI:hover p {
+  color: #FFF;
+}
+
+.POI p {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  color: var(--accent);
+  transition: .2s;
+  font-weight: bold;
+}
+
+.POI.one {
+  left: 28%;
+  margin-top: 50px;
+}
+                </code>
+            </pre>
+        </div>
+
+    </section>
+    <!-- End of Buttons Section -->
+
+    <!-- Icon Section -->
+    <section id="icons">
+
+        <div class="icons-head">
+            <h2>Ikoner</h2>
+            <div class="icons-line"></div>
+        </div>
+
+        <div class="icon_1">
+            <img src="img/icon_kipgryder.svg" alt="case 1">
+        </div>
+
+        <div class="icon_2">
+            <img src="img/icon_kipstegere.svg" alt="case 1">
+        </div>
+
+        <div class="icon_3">
+            <img src="img/icon_kogeborde.svg" alt="case 1">
+        </div>
+
+        <div class="icon_4">
+            <img src="img/instagram.png" alt="case 1">
+        </div>
+
+        <div class="icon_5">
+            <img src="img/facebook.png" alt="case 1">
+        </div>
+
+        <div class="icon_6">
+            <img src="img/linkedin.png" alt="case 1">
+        </div>
+
+        <div class="icons-text">
+            <b>Anvendelse:</b> Ikonerne af NORQi's produkter er på forsiden, hvorfra man kan komme
+                              videre ind og læse omkring produkterne. SoMe ikonerne er på alle sider i footeren.
+                              Ikonerne hjælper brugeren med at finde det de leder efter.
+        </div>
+
+        <div class="code-box-icons1">
+            <h1>Code Snippet (HTML):</h1>
+            <pre>
+                <code class="code">
+
+&lt;div class="icon_1"&gt;
+  &lt;img src="img/icon_kipgryder.svg" alt="case 1"&gt;
+&lt;/div&gt;
+
+&lt;div class="icon_2"&gt;
+  &lt;img src="img/icon_kipstegere.svg" alt="case 1"&gt;
+&lt;/div&gt;
+
+&lt;div class="icon_3"&gt;
+  &lt;img src="img/icon_kogeborde.svg" alt="case 1"&gt;
+&lt;/div&gt;
+
+&lt;div class="icon_4"&gt;
+  &lt;img src="img/instagram.png" alt="case 1"&gt;
+&lt;/div&gt;
+
+&lt;div class="icon_5"&gt;
+  &lt;img src="img/facebook.png" alt="case 1"&gt;
+&lt;/div&gt;
+
+&lt;div class="icon_6"&gt;
+  &lt;img src="img/linkedin.png" alt="case 1"&gt;
+&lt;/div&gt;
+
+                </code>
+            </pre>
+        </div>
+
+        <div class="code-box-icons2">
+            <h1>Code Snippet (CSS):</h1>
+            <pre>
+                <code class="code">
+.icon_1 img{
+  width: 30%;
+  position: relative;
+  bottom: 150px;
+}
+
+.icon_2 img{
+  width: 30%;
+  position: relative;
+  bottom: 400px;
+  left: -400px;
+}
+
+.icon_3 img{
+  width: 30%;
+  position: relative;
+  bottom: 650px;
+  left: 380px;
+}
+
+.icon_4 img{
+  width: 20%;
+  position: relative;
+  bottom: 430px;
+  left: -500px;
+}
+
+.icon_5 img{
+  width: 20%;
+  position: relative;
+  bottom: 655px;
+  left: 245px;
+}
+
+.icon_6 img{
+  width: 20%;
+  position: relative;
+  bottom: 655px;
+  left: -190px;
+}
+                </code>
+            </pre>
+        </div>
+
+
+
+    </section>
+    <!-- End of Icon Section -->
+
+
+
+</body>
+</html>
