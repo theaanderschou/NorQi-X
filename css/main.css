@@ -315,6 +315,46 @@ body {
     }
 }
 
+@media only screen and (max-width: 560px) {
+    .hero-title img {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .hero-btn {
+        top: 450px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .hero-title img {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .hero-btn {
+        top: 400px;
+    }
+
+    .herovid video {
+        height: 50%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .hero-title img {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .hero-btn {
+        top: 350px;
+    }
+
+    .herovid video {
+        height: 45%;
+    }
+}
 /* END OF HERO SECTION */
 
 
