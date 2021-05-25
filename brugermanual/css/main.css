@@ -79,6 +79,14 @@ video {
     opacity: 0;
 }
 
+.POI.faq {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    right: 110px;
+bottom: 40px;
+}
+
 #POI-video-container video {
     position: absolute;
     top: 52%;
@@ -149,22 +157,22 @@ video {
     padding: 10px;
     padding-bottom: 10px !important;
     position: relative;
+    margin-bottom: 20px;
 }
 
 .alert-box img {
     max-width: 50px;
     float: left;
-    margin-right: 20px;
+    margin-right: 10px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .alert-box p {
-    float: left;
-    display: contents;
     position: relative;
-    margin-right: 50px;
+    max-width: 80%;
+    left: 70px;
 }
 
 #infobox img:not(.cross) {
@@ -297,7 +305,7 @@ ol.two-columns {
 
 
 
-@media only screen and (max-width: 768px) and (min-width: 480px) {
+@media only screen and (max-width: 768px) and (min-width: 651px) {
 
     #POI-video-container video {
         top: 0%;
@@ -323,28 +331,18 @@ ol.two-columns {
     }
 
     .POI.one {
-        left: 70%;
-        top: 10%;
+        left: 71%;
+        top: 26%;
     }
 
     .POI.two {
         left: 72%;
-        top: 14%;
+        top: 34%;
     }
 
     .POI.three {
         left: 57%;
-        top: 8%;
-    }
-
-    .POI.four {
-        left: 66%;
-        top: 17%;
-    }
-
-    .POI.five {
-        left: 43%;
-        top: 13%;
+        top: 22%;
     }
 
 
@@ -353,7 +351,22 @@ ol.two-columns {
 }
 
 
+@media only screen and (max-width: 650px) and (min-width: 481px) {
+    .POI.one {
+        left: 72%;
+        top: 47%;
+    }
 
+    .POI.two {
+        left: 72%;
+        top: 54%;
+    }
+
+    .POI.three {
+        left: 57%;
+        top: 44%;
+    }
+}
 
 
 @media only screen and (max-width: 480px) {
