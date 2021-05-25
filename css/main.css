@@ -57,7 +57,6 @@ nav {
     position: relative;
     cursor: pointer;
     margin-top: 50px;
-    z-index: 5;
 }
 
 .burger .line1,
@@ -275,18 +274,6 @@ body {
     background-color: #458a18;
 }
 
-<<<<<<< HEAD
-=======
-@media only screen and (max-width: 1920px){
-    #hero {
-        height: 110vh;
-    }
-
-    .hero-title img {
-        width: 800px;
-        height: 800px;
-    }
->>>>>>> 46b42a213b46df12c6d50a6bdeacc0f7a6d344a8
 
 @media only screen and (max-width: 1250px) {
     .herovid video {
@@ -320,14 +307,6 @@ body {
     #hero {
         height: 70vh;
     }
-<<<<<<< HEAD
-=======
-
-    .hero-title img {
-        width: 400px;
-        height: 400px;
-    }
->>>>>>> 46b42a213b46df12c6d50a6bdeacc0f7a6d344a8
 
     .hero-title img {
         width: 45%;
@@ -362,17 +341,8 @@ body {
     }
 
     .hero-title img {
-<<<<<<< HEAD
         width: 60%;
         height: inherit;
-=======
-        width: 350px;
-        height: 350px;
-    }
-
-    .hero-btn {
-        top: 450px;
->>>>>>> 46b42a213b46df12c6d50a6bdeacc0f7a6d344a8
     }
 
     .herovid video {
@@ -566,62 +536,16 @@ body {
     }
 }
 
-<<<<<<< HEAD
 
 @media only screen and (max-width: 600px) {
     #product-drawings {
         height: 250vh;
-=======
-@media only screen and (max-width: 630px) {
-    #product-drawings {
-        height: 200vh;
-    }
-
-    .prod1 {
-        height: 60vh;
-    }
-
-    .prod1 img {
-        width: 70%;
-    }
-
-    .prod2 {
-        height: 60vh;
-    }
-
-    .prod2 img {
-        width: 70%;
-    }
-
-    .prod3 {
-        height: 60vh;
-    }
-
-    .prod3 img {
-        width: 70%;
->>>>>>> 46b42a213b46df12c6d50a6bdeacc0f7a6d344a8
     }
 }
 
 @media only screen and (max-width: 500px) {
     #product-drawings {
-<<<<<<< HEAD
         height: 230vh;
-=======
-        height: 170vh;
-    }
-
-    .prod1 {
-        height: 50vh;
-    }
-
-    .prod2 {
-        height: 50vh;
-    }
-
-    .prod3 {
-        height: 50vh;
->>>>>>> 46b42a213b46df12c6d50a6bdeacc0f7a6d344a8
     }
 }
 
@@ -706,50 +630,6 @@ body {
     left: 50%;
 }
 
-<<<<<<< HEAD
-=======
-@media only screen and (max-width: 1920px) {
-    #manual-section {
-        height: 90vh;
-        background-color: orange;
-    }
-}
-
-@media only screen and (max-width: 1800px) {
-    #manual-section {
-        height: 80vh;
-    }
-}
-
-@media only screen and (max-width: 1500px) {
-    #manual-section {
-        height: 70vh;
-    }
-}
-
-@media only screen and (max-width: 1370px) {
-    .model-text {
-        margin: 200px auto 0 auto;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    #manual-section {
-        height: 60vh;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    #manual-section {
-        height: 50vh;
-    }
-
-    .model-text {
-        margin: 100px auto 0 auto;
-    }
-}
-
->>>>>>> 46b42a213b46df12c6d50a6bdeacc0f7a6d344a8
 @media only screen and (max-width: 979px) {
     #manual-section {
         height: 100vh;
@@ -949,11 +829,7 @@ body {
     float: left;
 }
 
-<<<<<<< HEAD
 .statement-img img {
-=======
-.statement-img img{
->>>>>>> 46b42a213b46df12c6d50a6bdeacc0f7a6d344a8
     max-width: 100%;
 }
 
@@ -1111,7 +987,6 @@ footer {
 .footer-img img {
     width: 100%;
 }
-<<<<<<< HEAD
 
 /* END OF FOOTER SECTION */
 
@@ -1548,6 +1423,3 @@ ol.two-columns {
 
 
 }
-=======
-/* END OF FOOTER SECTION */
->>>>>>> 46b42a213b46df12c6d50a6bdeacc0f7a6d344a8
