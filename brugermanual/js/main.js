@@ -56,11 +56,18 @@ function defaultStance() {
 
     var replaceSource = source.src;
 
-    source.setAttribute('src', replaceSource.replace(".mp4", "-reverse.mp4"));
-    video.load();
-    video.play();
+    if (infobox.classList.contains("faq")) {
+        hideInfo()
+        infobox.classList.remove("faq");
+    } else {
+        source.setAttribute('src', replaceSource.replace(".mp4", "-reverse.mp4"));
+        video.load();
+        video.play();
 
-    hideInfo()
+        hideInfo()
+    }
+
+
 }
 
 
@@ -85,7 +92,7 @@ function dropdownMainMenu() {
 
 
 function dropDown(elem) {
-    
+
     event.target.getElementsByClassName("dropdown-arrow")[0].classList.toggle("active");
     event.target.nextElementSibling.classList.toggle("active");
 }
@@ -96,6 +103,7 @@ function dropDown(elem) {
 
 var infoTitle = document.getElementById("info-title");
 var infoText = document.getElementById("info-text");
+var infoCross = document.querySelector("img.cross");
 
 
 
@@ -183,7 +191,7 @@ madtemperaturen.</p>
 function runVid2() {
 
     infoTitle.innerHTML = "<span>02</span> Trykknappanel";
-    
+
     infoText.innerHTML = `
 
     <div onclick="dropDown()" class="info-dropdown-header">Startknap:<img class="dropdown-arrow" src="img/arrow-white.svg"></div>
@@ -217,7 +225,7 @@ Der går ca. 30 sekunder før systemet og dermed skærmen er klar til drift.</p>
 function runVid3() {
 
     infoTitle.innerHTML = "<span>03</span> Kipsystem";
-    
+
     infoText.innerHTML = `
 
 <div onclick="dropDown()" class="info-dropdown-header">Smørepunkt:<img class="dropdown-arrow" src="img/arrow-white.svg"></div>
@@ -261,33 +269,79 @@ Batteriet benyttes kun til back up for det indbyggede ur.</p>
 }
 
 
-// Runs video to POI #4
+// Shows FAQ when clicked
+function showFAQ() {
 
-function runVid4() {
+    infobox.classList.toggle("faq");
 
-    infoTitle.innerHTML = "<span>04</span> Bagpanel til kontrol";
+    infoCross.innerHTML != '<img onclick="hideInfo()" class="cross" src="img/cross.svg">'
 
-    source.setAttribute('src', 'video/default-stance-reverse.mp4');
-    video.load();
-    video.play();
+    infoTitle.innerHTML = "<span>FAQ</span> Symbolforklaring";
+
+    infoText.innerHTML = `
+
+<div class='alert-box'><img src='img/betjeningsvejledning.png'>
+
+        <p>Læs betjeningsvejledning</p>
+
+    </div>
+
+<div class='alert-box'><img src='img/genbrug.png'>
+
+        <p>Apparatet er klassificeret iht. det europæiske
+direktiv 2002/95/EF
+(WEEE) om affald af elektrisk-og elektronisk
+udstyr. Gryden må ikke skrottes som almindeligt
+affald, men skal afleveres til genbrug.</p>
+
+    </div>
+
+<div class='alert-box'><img src='img/elektrisk.png'>
+
+        <p>Farlig elektrisk spænding.
+Symbolet er placeret på dæksler på apparatet,
+der ikke umiddelbart ser ud til at indeholde farlig
+elektrisk udstyr. Samt i brugsanvisningen
+ifm. elektriske farer.</p>
+
+    </div>
+
+<div class='alert-box'><img src='img/giv-agt.png'>
+
+        <p>Giv agt.
+Symbolet er på steder i brugsanvisningen der
+kræver særlig opmærksomhed.</p>
+
+    </div>
+
+<div class='alert-box'><img src='img/potentialudligning.png'>
+
+        <p>Symbolet er anbragt på bagsiden af apparatet ved
+tilslutningsklemmen for potentialeudligning.</p>
+
+    </div>
+
+<div class='alert-box'><img src='img/elektromagnetisk.png'>
+
+        <p>Ikke ioniserende elektromagnetisk stråling.
+Symbolet betyder forhøjet niveau af potentiel
+farlig elektromagnetisk udstråling.</p>
+
+    </div>
+
+<div class='alert-box'><img src='img/eksplosionsfare.png'>
+
+        <p>Eksplosionsfare.
+Symbolet advarer om eksplosionsfare, hvis
+man hælder vand i varm olie</p>
+
+    </div>
+
+`;
 
     showInfo();
+
 }
-
-
-// Runs video to POI #5
-
-function runVid5() {
-
-    infoTitle.innerHTML = "<span>05</span> Sikring";
-
-    source.setAttribute('src', 'video/default-stance-reverse.mp4');
-    video.load();
-    video.play();
-
-    showInfo();
-}
-
 
 
 
