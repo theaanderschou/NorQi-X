@@ -119,112 +119,6 @@ nav {
   transition: all 0.3s ease;
 }
 
-/* Responsiv max-w 1015px */
-@media only screen and (max-width: 1115px) {
-  body {
-    overflow-x: hidden;
-  }
-
-  .logo {
-    display: flex;
-    flex: 2;
-    width: 40%;
-    margin-left: 7%;
-    margin-right: 3%;
-  }
-
-  .logo img {
-    width: 200px;
-    padding-bottom: 10px;
-  }
-
-  .nav-links {
-    position: absolute;
-    right: 0px;
-    height: 86vh;
-    top: 12vh;
-    display: flex;
-    flex-direction: column;
-    align-items: right;
-    width: 40%;
-    transform: translateX(100%);
-    transition: 0.5s ease-in;
-    font-size: 0.875rem;
-  }
-
-  .nav-links li {
-    opacity: 0;
-    width: 100%;
-    transition: 0.2s;
-  }
-
-  .nav-links li:hover {
-    border-bottom: none;
-  }
-
-  .nav-links a {
-    color: black;
-    width: 80%;
-    display: none;
-  }
-
-  .burger {
-    display: block;
-    margin-right: 0;
-  }
-
-  .nav-active {
-    transform: translateX(0%);
-    background-color: #ffffff;
-    opacity: 60%;
-  }
-
-  .nav-active a {
-    display: block;
-  }
-
-  .nav-active li:hover {
-    background: rgba(219, 216, 216, 0.15);
-  }
-
-  .nav-links li:hover a {
-    color: #303030;
-    font-weight: 700;
-  }
-
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0px);
-    }
-  }
-
-  .menu {
-    position: absolute;
-    transform: translateX(-55px);
-    color: #56a0d3;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    top: 35px;
-  }
-
-  .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
-
-  .toggle .line2 {
-    opacity: 0;
-  }
-
-  .toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-  }
-}
-/* End of Responsiv max-w 1015px */
 
 /* Intro Section */
 #intro {
@@ -1000,3 +894,182 @@ right: 0;
   overflow: scroll;
 }
 /* End of Icons Section */
+
+
+
+
+
+
+
+/* Responsiv max-w 1015px */
+@media only screen and (max-width: 1115px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .logo {
+    display: flex;
+    flex: 2;
+    width: 40%;
+    margin-left: 7%;
+    margin-right: 3%;
+  }
+
+  .logo img {
+    width: 200px;
+    padding-bottom: 10px;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 86vh;
+    top: 12vh;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    width: 40%;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+    font-size: 0.875rem;
+  }
+
+  .nav-links li {
+    opacity: 0;
+    width: 100%;
+    transition: 0.2s;
+  }
+
+  .nav-links li:hover {
+    border-bottom: none;
+  }
+
+  .nav-links a {
+    color: black;
+    width: 80%;
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    margin-right: 0;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+    background-color: #ffffff;
+    opacity: 60%;
+  }
+
+  .nav-active a {
+    display: block;
+  }
+
+  .nav-active li:hover {
+    background: rgba(219, 216, 216, 0.15);
+  }
+
+  .nav-links li:hover a {
+    color: #303030;
+    font-weight: 700;
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  .menu {
+    position: absolute;
+    transform: translateX(-55px);
+    color: #56a0d3;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    top: 35px;
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .logo img{
+    width: 90px;
+  }
+
+  .logo-line{
+    margin: 50px 10px 0 10px;
+  }
+
+  .logo-text{
+    margin-top: 55px;
+  }
+
+  .navi-img img{
+    margin-left: 80px;
+  }
+
+  .hero-btn{
+    left: 30px;
+  }
+
+  .manual-btn{
+    left: 120px;
+  }
+
+  .btn-arrow{
+    left: 220px;
+  }
+
+  .btns-text{
+    top: -200px;
+  }
+
+  .icon_1 img{
+    bottom: 230px;
+  }
+
+  .icon_2 img{
+    bottom: 520px;
+    left: -340px;
+  }
+
+  .icon_3 img{
+    bottom: 810px;
+    left: 350px;
+  }
+
+  .icon_4 img{
+    bottom: 600px;
+    left: -450px;
+  }
+
+  .icon_5 img{
+    bottom: 800px;
+    left: 200px;
+  }
+
+  .icon_6 img{
+    bottom: 800px;
+    left: -180px;
+  }
+
+  .icons-text{
+    top: -170px;
+  }
+
+}
+/* End of Responsiv max-w 1015px */
