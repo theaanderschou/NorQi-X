@@ -38,14 +38,16 @@ nav {
   background-color: #fff;
   position: fixed;
   top: 0;
+  right: 0;
 }
 
 .logo {
-  display: flex;
+  display: block;
   width: 50%;
   margin-left: 7%;
   margin-bottom: 20px;
   margin-right: 10%;
+  z-index: 10;
 }
 
 .logo img {
@@ -59,6 +61,7 @@ nav {
   position: relative;
   margin-top: 50px;
   font-size: 18px;
+  margin-left: 10px;
 }
 
 .logo-line {
@@ -72,10 +75,11 @@ nav {
 .nav-links {
   display: flex;
   justify-content: flex-start;
-  width: 100%;
+  width: 60%;
   height: 12vh;
-  position: relative;
+  position: absolute;
   margin-top: 10px;
+  right: 0;
 }
 
 .nav-links li {
@@ -388,12 +392,7 @@ nav {
   margin: 0 auto;
 }
 
-    /* Responsiv max-w 875px */
-    @media only screen and (max-width: 875px) {
-      .col-text {
-        overflow: scroll;
-      }
-    }
+
 
 .code-box-col2 {
   grid-column: 2/2;
@@ -461,14 +460,7 @@ nav {
   margin: 0 auto;
 }
 
-    /* Responsiv max-w 975px */
-    @media only screen and (max-width: 975px) {
-      .navi-text {
-        overflow: scroll;
-        top: -180;
-      }
-    }
-    /* End of Responsiv max-w 975px */
+
 
 
 .code-box-navi1 {
@@ -528,7 +520,7 @@ nav {
   flex: 1;
 }
 
-.hero-btn {
+.hero-btn2 {
     height: 60px;
     width: 470px;
     position: relative;
@@ -538,7 +530,7 @@ nav {
     left: 50px;
 }
 
-.hero-button {
+.hero-button2 {
     height: 60px;
     width: 470px;
     border-radius: 30px;
@@ -559,7 +551,7 @@ nav {
     background-color: #458a18;
 }
 
-.manual-btn {
+.manual-btn2 {
     height: 60px;
     width: 300px;
     margin: 50px auto 0 auto;
@@ -568,7 +560,7 @@ nav {
     left: 140px;
 }
 
-.manual-button {
+.manual-button2 {
     height: 60px;
     width: 300px;
     border-radius: 30px;
@@ -718,16 +710,10 @@ right: 0;
   max-width: 400px;
   margin: 0 auto;
   top: -140;
+  margin-top: -60px;
 }
 
-    /* Responsiv max-w 975px */
-    @media only screen and (max-width: 975px) {
-      .btns-text {
-        overflow: scroll;
-        height: 160px;
-      }
-    }
-    /* End of Responsiv max-w 975px */
+
 
 .code-box-btns1 {
   grid-column: 2/2;
@@ -758,16 +744,8 @@ right: 0;
   margin: 0 auto 80px auto;
   overflow: scroll;
   top: 80;
-
+  margin-top: 50px;
 }
-
-        /* Responsiv max-w 815px */
-        @media only screen and (max-width: 1107px) {
-          .btns-text {
-            top: 0;
-          }
-        }
-        /* End of Responsiv max-w 815px */
 /* End of Buttons Section */
 
 /* Icons Section */
@@ -855,14 +833,6 @@ right: 0;
   font-family: roboto;
 }
 
-    /* Responsiv max-w 975px */
-    @media only screen and (max-width: 975px) {
-      .icons-text {
-        overflow: scroll;
-        top: -60;
-      }
-    }
-    /* End of Responsiv max-w 975px */
 
 .code-box-icons1 {
   grid-column: 2/2;
@@ -908,7 +878,7 @@ right: 0;
   }
 
   .logo {
-    display: flex;
+    display: block;
     flex: 2;
     width: 40%;
     margin-left: 7%;
@@ -920,94 +890,12 @@ right: 0;
     padding-bottom: 10px;
   }
 
-  .nav-links {
-    position: absolute;
-    right: 0px;
-    height: 86vh;
-    top: 12vh;
-    display: flex;
-    flex-direction: column;
-    align-items: right;
-    width: 40%;
-    transform: translateX(100%);
-    transition: 0.5s ease-in;
-    font-size: 0.875rem;
-  }
-
-  .nav-links li {
-    opacity: 0;
-    width: 100%;
-    transition: 0.2s;
-  }
-
-  .nav-links li:hover {
-    border-bottom: none;
-  }
-
-  .nav-links a {
-    color: black;
-    width: 80%;
-    display: none;
-  }
-
-  .burger {
-    display: block;
-    margin-right: 0;
-  }
-
-  .nav-active {
-    transform: translateX(0%);
-    background-color: #ffffff;
-    opacity: 60%;
-  }
-
-  .nav-active a {
-    display: block;
-  }
-
-  .nav-active li:hover {
-    background: rgba(219, 216, 216, 0.15);
-  }
-
-  .nav-links li:hover a {
-    color: #303030;
-    font-weight: 700;
-  }
-
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0px);
-    }
-  }
-
-  .menu {
-    position: absolute;
-    transform: translateX(-55px);
-    color: #56a0d3;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    top: 35px;
-  }
-
-  .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
-
-  .toggle .line2 {
-    opacity: 0;
-  }
-
-  .toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
+  .logo-line {
+    background-color: transparent;
   }
 
   .logo img{
-    width: 90px;
+    width: 70px;
   }
 
   .logo-line{
@@ -1015,27 +903,30 @@ right: 0;
   }
 
   .logo-text{
-    margin-top: 55px;
+    margin-top: 45px;
+    left: 10px;
   }
 
   .navi-img img{
     margin-left: 80px;
   }
 
-  .hero-btn{
-    left: 30px;
+  .hero-button{
+    margin-top: 50px;
+    margin-left: 90px;
   }
 
-  .manual-btn{
-    left: 120px;
+  .manual-btn2{
+    margin-left: 100px;
+    margin-top: 30px;
   }
 
   .btn-arrow{
-    left: 220px;
+    left: 200px;
   }
 
   .btns-text{
-    top: -200px;
+    top: -150px;
   }
 
   .icon_1 img{
@@ -1073,3 +964,29 @@ right: 0;
 
 }
 /* End of Responsiv max-w 1015px */
+
+
+/* Responsiv max-w 975px */
+@media only screen and (max-width: 975px) {
+  .icons-text {
+    overflow: scroll;
+    top: -60;
+  }
+  .btns-text {
+    overflow: scroll;
+    height: 160px;
+  }
+  .navi-text {
+    overflow: scroll;
+    top: -180;
+  }
+}
+/* End of Responsiv max-w 975px */
+
+/* Responsiv max-w 875px */
+@media only screen and (max-width: 875px) {
+  .col-text {
+    overflow: scroll;
+  }
+}
+/* End of Responsiv max-w 875px */

@@ -50,6 +50,7 @@ nav {
     position: relative;
     cursor: pointer;
     margin-top: 50px;
+    z-index: 5;
 }
 
 .burger .line1,
@@ -264,7 +265,7 @@ body {
     #hero {
         height: 110vh;
     }
-    
+
     .hero-title img {
         width: 800px;
         height: 800px;
@@ -298,7 +299,7 @@ body {
     #hero {
         height: 70vh;
     }
-    
+
     .hero-title img {
         width: 400px;
         height: 400px;
@@ -317,7 +318,7 @@ body {
     #hero {
         height: 65vh;
     }
-    
+
     .hero-btn {
         height: 40px;
         width: 250px;
@@ -338,12 +339,12 @@ body {
     #hero {
         height: 65vh;
     }
-    
+
     .hero-title img {
         width: 350px;
         height: 350px;
     }
-    
+
     .hero-btn {
         top: 450px;
     }
@@ -357,12 +358,12 @@ body {
     #hero {
         height: 50vh;
     }
-    
+
     .hero-title img {
         width: 300px;
         height: 300px;
     }
-    
+
     .hero-btn {
         top: 400px;
     }
@@ -376,12 +377,12 @@ body {
     #hero {
         height: 45vh;
     }
-    
+
     .hero-title img {
         width: 250px;
         height: 250px;
     }
-    
+
     .hero-btn {
         top: 350px;
     }
@@ -525,7 +526,7 @@ body {
     #product-drawings {
         height: 65vh;
     }
-    
+
     .product-drawings-header {
         padding-top: 50px;
     }
@@ -535,17 +536,17 @@ body {
     #product-drawings {
         height: 170vh;
     }
-    
+
     .product-drawings-header {
         height: 200px;
         width: 340px;
     }
-    
+
     .product-container {
         display: block;
         margin-top: 150px;
     }
-    
+
     .prod1 {
         float: left;
         width: 100%;
@@ -555,7 +556,7 @@ body {
     .prod1 img {
         width: 50%;
     }
-    
+
     .prod2 {
         float: left;
         width: 100%;
@@ -565,7 +566,7 @@ body {
     .prod2 img {
         width: 50%;
     }
-    
+
     .prod3 {
         float: left;
         width: 100%;
@@ -585,7 +586,7 @@ body {
     #product-drawings {
         height: 200vh;
     }
-    
+
     .prod1 {
         height: 60vh;
     }
@@ -593,7 +594,7 @@ body {
     .prod1 img {
         width: 70%;
     }
-    
+
     .prod2 {
         height: 60vh;
     }
@@ -601,7 +602,7 @@ body {
     .prod2 img {
         width: 70%;
     }
-    
+
     .prod3 {
         height: 60vh;
     }
@@ -619,7 +620,7 @@ body {
     .prod1 {
         height: 50vh;
     }
-    
+
     .prod2 {
         height: 50vh;
     }
@@ -744,7 +745,7 @@ body {
     #manual-section {
         height: 50vh;
     }
-    
+
     .model-text {
         margin: 100px auto 0 auto;
     }
@@ -764,7 +765,7 @@ body {
         width: 100%;
         position: relative;
     }
-    
+
     .model-pic img {
         width: 80%;
         position: absolute;
@@ -892,7 +893,7 @@ body {
 }
 
 .statement-img img{
-    max-width: 100%;  
+    max-width: 100%;
 }
 
 .statement-container {
@@ -957,7 +958,7 @@ body {
 }
 
 .ig-gallery img {
-    max-width: 95%; 
+    max-width: 95%;
     margin: 0 auto;
 }
 
@@ -967,7 +968,7 @@ body {
 }
 
 .ig-btn img {
-    max-width: 180px; 
+    max-width: 180px;
     margin: 0 auto;
 }
 /* END OF INSTAGRAM SECTION */
