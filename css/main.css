@@ -469,9 +469,6 @@ body {
     text-decoration: underline;
 }
 
-
-}
-
 @media only screen and (max-width: 979px) {
     #product-drawings {
         height: 65vh;

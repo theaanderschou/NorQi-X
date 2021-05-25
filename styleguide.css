@@ -25,108 +25,209 @@ a {
   color: #303030;
 }
 
-/* Nav Bar Section */
+/* NAV BAR */
 nav {
-  display: flex;
+  display: block;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
-  height: 12vh;
-  margin: 0;
+  width: 50px;
+  height: 100vh;
   z-index: 2;
-  padding-right: 30px;
-  background-color: #fff;
+  background-color: #5CB720;
   position: fixed;
   top: 0;
   right: 0;
-}
-
-.logo {
-  display: block;
-  width: 50%;
-  margin-left: 7%;
-  margin-bottom: 20px;
-  margin-right: 10%;
-  z-index: 10;
-}
-
-.logo img {
-  width: 80px;
-  padding-bottom: 5px;
-  padding-top: 5px;
-  margin-top: 20px;
-}
-
-.logo-text {
-  position: relative;
-  margin-top: 50px;
-  font-size: 18px;
-  margin-left: 10px;
-}
-
-.logo-line {
-  width: 3px;
-  height: 40px;
-  background-color: #303030;
-  margin: 45px 10px 0 10px;
+  z-index: 5;
   transition: all 0.3s ease;
-}
-
-.nav-links {
-  display: flex;
-  justify-content: flex-start;
-  width: 60%;
-  height: 12vh;
-  position: absolute;
-  margin-top: 10px;
-  right: 0;
-}
-
-.nav-links li {
-  display: block;
-  flex-grow: 1;
-  text-align: center;
-  font-size: 14px;
-  position: relative;
-}
-
-.nav-links li a {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.nav-links li:hover {
-  border-bottom: 2px solid #303030;
-}
-
-.nav-links a {
-  color: #303030;
-  text-decoration: none;
+  border-left: 1px solid rgba(0, 0, 0, 0.185);
 }
 
 .burger {
-  display: none;
+  display: block;
+  height: 100px;
+  width: 400px;
+  position: relative;
   cursor: pointer;
-  margin-top: 5px;
+  margin-top: 50px;
 }
 
 .burger .line1,
 .burger .line2,
 .burger .line3 {
-  width: 25px;
-  height: 3px;
-  background-color: #56a0d3;
-  border-radius: 2px;
-  margin: 4px 20px 0 0;
-  transition: all 0.3s ease;
+  width: 30px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 1px;
+  margin-top: 5px;
+  margin-left: 10px;
 }
+
+.nav-active .burger .line1,
+.nav-active .burger .line2,
+.nav-active .burger .line3 {
+  width: 40px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 1px;
+  margin-top: 1px;
+}
+
+.nav-active .menu {
+  position: absolute;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  top: 20px;
+  margin-left: 15px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.nav-links {
+  position: absolute;
+  left: -400px;
+  height: 100vh;
+  top: 17vh;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  width: 100%;
+  transform: translateX(100%);
+  transition: 0.5s ease-in;
+  font-size: 0.875rem;
+  list-style: none;
+}
+
+.nav-links li {
+  opacity: 0;
+  width: 100%;
+  transition: 0.2s;
+  text-align: left;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif, arial;
+  position: relative;
+  top: -15px;
+  padding-left: 10px;
+}
+
+.nav-links li:hover {
+  border-bottom: none;
+}
+
+.nav-links a {
+  color: #fff;
+  width: 100%;
+  display: none;
+  margin-left: 5%;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+.nav-active {
+  transform: translateX(0%);
+  background-color: #303030;
+  color: #fff;
+  width: 400px;
+}
+
+.nav-active a {
+  display: block;
+}
+
+.nav-active li:hover {
+  background: rgba(219, 216, 216, 0.15);
+}
+
+.nav-links li:hover a {
+  color: #303030;
+  font-weight: 700;
+}
+
+@keyframes navLinkFade {
+  from {
+      opacity: 0;
+      transform: translateX(50px);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+
+@media only screen and (max-width: 550px) {
+  nav {
+      width: 50px;
+      height: 100vh;
+  }
+
+  .burger .line1,
+  .burger .line2,
+  .burger .line3 {
+      width: 30px;
+      height: 6px;
+      background-color: #fff;
+      border-radius: 1px;
+      margin-top: 5px;
+      margin-left: 10px;
+  }
+}
+/* END OF NAV BAR */
+
+
+
+/* Logo section */
+.top-logo {
+  display: flex;
+  width: 300px;
+  margin-top: 30px;
+}
+
+.top-logo img {
+  width: 300px;
+  height: 100px;
+  position: relative;
+  left: -20%;
+}
+
+.top-logo-line {
+  width: 3px;
+  height: 40px;
+  background-color: #000;
+  margin: 32px 0 0 160px;
+  transition: all 0.3s ease;
+  position: absolute;
+}
+
+.top-logo-text {
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 180px;
+  font-size: 18px;
+}
+/* End of Logo section */
+
+
 
 
 /* Intro Section */
 #intro {
-  margin: 150px 0 0 40px;
+  margin: 0px 0 0 40px;
   text-align: center;
 }
 
@@ -392,8 +493,6 @@ nav {
   margin: 0 auto;
 }
 
-
-
 .code-box-col2 {
   grid-column: 2/2;
   grid-row: 1/3;
@@ -434,7 +533,7 @@ nav {
   flex: 1;
 }
 
-.navi-img img {
+.navi-img  {
   grid-column: 1/1;
   grid-row: 2/2;
   height: auto;
@@ -442,7 +541,11 @@ nav {
   position: relative;
   top: -220px;
   width: 350px;
-  margin-left: 120px;
+  margin-left: 150px;
+}
+
+.navi-img img {
+  width: 80%;
 }
 
 .navi-text {
@@ -459,9 +562,6 @@ nav {
   max-width: 400px;
   margin: 0 auto;
 }
-
-
-
 
 .code-box-navi1 {
   grid-column: 2/2;
@@ -499,11 +599,11 @@ nav {
 /* Buttons Section */
 #btns {
   height: 100vh;
+  margin-top: -10vh;
   margin-left: 7%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 33% 33% 33%;
-  margin-top: 50px;
 }
 
 .btns-head {
@@ -518,110 +618,6 @@ nav {
   margin: 0;
   transition: all 0.3s ease;
   flex: 1;
-}
-
-.hero-btn2 {
-    height: 60px;
-    width: 470px;
-    position: relative;
-    margin: 0 auto;
-    top: 50px;
-    z-index: 2;
-    left: 50px;
-}
-
-.hero-button2 {
-    height: 60px;
-    width: 470px;
-    border-radius: 30px;
-    background-color: #5CB720;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.hero-button:hover {
-    font-weight: 600;
-    background-color: #458a18;
-}
-
-.manual-btn2 {
-    height: 60px;
-    width: 300px;
-    margin: 50px auto 0 auto;
-    position: relative;
-    top: 30px;
-    left: 140px;
-}
-
-.manual-button2 {
-    height: 60px;
-    width: 300px;
-    border-radius: 30px;
-    background-color: #5CB720;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.manual-button:hover {
-    font-weight: 600;
-    background-color: #458a18;
-}
-
-.POI {
-    height: 40px;
-    width: 40px;
-    border: 3px solid var(--accent);
-    position: absolute;
-    border-radius: 20px;
-    transition: .2s;
-    box-shadow: 0 0 10px var(--accent);
-    cursor: pointer;
-    background: rgba(255, 255, 255, 1);
-    z-index: 2;
-}
-
-.POI:hover {
-    background: var(--accent);
-}
-
-.POI:hover p {
-    color: #FFF;
-}
-
-.POI p {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    color: var(--accent);
-    transition: .2s;
-    font-weight: bold;
-}
-
-.POI.one {
-    left: 31%;
-    margin-top: 50px;
-}
-
-.btn-arrow{
-  width: 40%;
-  position: relative;
-  top: 50px;
-  left: 230px;
 }
 
 .btns{
@@ -652,48 +648,105 @@ nav {
   position: relative;
   margin: 0 auto;
   width: 45vw;
-  height: 30vh;
+  height: 55vh;
   text-align: center;
   top: 40px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-.button {
-border-radius: 20px;
-background-color: #56a0d3;
-border: none;
-color: #FFFFFF;
-text-align: center;
-font-size: 13px;
-font-family: 'Roboto', sans-serif;
-padding: 10px;
-width: 210px;
-height: 40px;
-cursor: pointer;
-margin: 5px;
+.hero-btn2 {
+  height: 60px;
+  width: 320px;
+  position: relative;
+  margin: 0 auto;
+  top: 50px;
+  z-index: 2;
 }
 
-.button span {
-cursor: pointer;
-position: relative;
-transition: 0.2s;
+.hero-button2 {
+  height: 60px;
+  width: 320px;
+  border-radius: 30px;
+  background-color: #5CB720;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 10px;
+  cursor: pointer;
 }
 
-.button span:after {
-content: url(./img/ylw-arrow.png);
-position: absolute;
-opacity: 0;
-transition: 0.2s;
+.hero-button2:hover {
+  font-weight: 600;
+  background-color: #458a18;
 }
 
-.button:hover span {
-padding-right: 45px;
+.manual-btn2 {
+  height: 60px;
+  width: 250px;
+  margin: 100px auto 0 auto;
+
 }
 
-.button:hover span:after {
-opacity: 1;
-right: 0;
+.manual-button2 {
+  height: 60px;
+  width: 250px;
+  border-radius: 30px;
+  background-color: #5CB720;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.manual-button2:hover {
+  font-weight: 600;
+  background-color: #458a18;
+}
+
+.POI {
+  height: 40px;
+  width: 40px;
+  border: 3px solid var(--accent);
+  border-radius: 20px;
+  transition: .2s;
+  box-shadow: 0 0 10px var(--accent);
+  cursor: pointer;
+  background: rgba(255, 255, 255, 1);
+  z-index: 2;
+  margin: 0 auto;
+}
+
+.POI:hover {
+  background: var(--accent);
+}
+
+.POI:hover p {
+  color: #FFF;
+}
+
+.POI p {
+  color: var(--accent);
+  transition: .2s;
+  font-weight: bold;
+  padding-top: 3px;
+}
+
+.POI.one {
+  left: 31%;
+  margin-top: 50px;
+}
+
+.btn-arrow{
+  width: 40px;
+  margin-top: 50px;
 }
 
 .btns-text {
@@ -709,44 +762,75 @@ right: 0;
   height: 120px;
   max-width: 400px;
   margin: 0 auto;
-  top: -140;
-  margin-top: -60px;
+  top: 0px;
 }
 
+    /* Responsiv max-w 975px 
+    @media only screen and (max-width: 1050px) {
+      .hero-btn2 {
+        height: 60px;
+        width: 370px;
+      }
+      
+      .hero-button2 {
+        height: 60px;
+        width: 370px;
+      }
+    }
+    /* End of Responsiv max-w 975px */
 
+    /* Responsiv max-w 975px */
+    @media only screen and (max-width: 975px) {
+      .btns-text {
+        overflow: scroll;
+        height: 160px;
+      }
+    }
+    /* End of Responsiv max-w 975px */
 
-.code-box-btns1 {
-  grid-column: 2/2;
-  grid-row: 1/2;
-  height: 250px;
-  width: 80%;
-  text-align: left;
-  background-color: #5CB720;
-  color: #fff;
-  border-radius: 20px;
-  padding: 20px;
-  position: relative;
-  margin: 0 auto 80px auto;
-  overflow: scroll;
-}
-
-.code-box-btns2 {
-  grid-column: 2/2;
-  grid-row: 2/3;
-  height: 250px;
-  width: 80%;
-  text-align: left;
-  background-color: #5CB720;
-  color: #fff;
-  border-radius: 20px;
-  padding: 20px;
-  position: relative;
-  margin: 0 auto 80px auto;
-  overflow: scroll;
-  top: 80;
-  margin-top: 50px;
-}
+    .code-box-btns1 {
+      grid-column: 2/2;
+      grid-row: 1/2;
+      height: 250px;
+      width: 80%;
+      text-align: left;
+      background-color: #5CB720;
+      color: #fff;
+      border-radius: 20px;
+      padding: 20px;
+      position: relative;
+      margin: 0 auto 80px auto;
+      overflow: scroll;
+    }
+        
+    .code-box-btns2 {
+      grid-column: 2/2;
+      grid-row: 2/3;
+      height: 250px;
+      width: 80%;
+      text-align: left;
+      background-color: #5CB720;
+      color: #fff;
+      border-radius: 20px;
+      padding: 20px;
+      position: relative;
+      margin: 0 auto 80px auto;
+      overflow: scroll;
+      top: 80;
+      margin-top: 50px;
+    }
+        /* Responsiv max-w 1107px */
+        @media only screen and (max-width: 1107px) {
+          .btns-text {
+            top: 0;
+          }
+        }
+        /* End of Responsiv max-w 1107px */
 /* End of Buttons Section */
+
+
+
+
 
 /* Icons Section */
 #icons {
@@ -761,10 +845,6 @@ right: 0;
 .icons-head {
   grid-column: 1/1;
   grid-row: 1/1;
-}
-
-.icons-head h2{
-  font-family: roboto;
 }
 
 .icons-line {
@@ -827,10 +907,10 @@ right: 0;
   color: #fff;
   border-radius: 10px;
   padding: 20px;
-  height: 120px;
+  height: 170px;
   max-width: 400px;
   margin: 0 auto;
-  font-family: roboto;
+  overflow: scroll;
 }
 
 
@@ -907,28 +987,6 @@ right: 0;
     left: 10px;
   }
 
-  .navi-img img{
-    margin-left: 80px;
-  }
-
-  .hero-button{
-    margin-top: 50px;
-    margin-left: 90px;
-  }
-
-  .manual-btn2{
-    margin-left: 100px;
-    margin-top: 30px;
-  }
-
-  .btn-arrow{
-    left: 200px;
-  }
-
-  .btns-text{
-    top: -150px;
-  }
-
   .icon_1 img{
     bottom: 230px;
   }
@@ -972,10 +1030,7 @@ right: 0;
     overflow: scroll;
     top: -60;
   }
-  .btns-text {
-    overflow: scroll;
-    height: 160px;
-  }
+
   .navi-text {
     overflow: scroll;
     top: -180;

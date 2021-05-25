@@ -11,53 +11,50 @@
 </head>
 <body>
 
-  <!-- Nav -->
 
-  <div class="logo">
+
+  <div class="top-logo">
       <a href="#intro">
           <img src="./img/NORQI-Logo.svg" alt="logo">
       </a>
 
-      <div class="logo-line1"></div>
+      <div class="top-logo-line"></div>
 
-      <div class="logo-text">
+      <div class="top-logo-text">
           <p>STYLEGUIDE</p>
       </div>
   </div>
 
+    <!-- Nav -->
   <nav>
 
+    <ul class="nav-links">
+        <li>
+            <a href="#intro">Intro</a>
+        </li>
+        <li>
+          <a href="#logo">Logo</a>
+        </li>
+        <li>
+          <a href="#typo">Typografi</a>
+        </li>
+        <li>
+          <a href="#color">Farver</a>
+        </li>
+        <li>
+          <a href="#navi">Navigation</a>
+        </li>
+        <li>
+          <a href="#btns">Knapper</a>
+        </li>
+    </ul>
 
-      <ul class="nav-links">
-          <li>
-              <a href="#intro">Intro</a>
-          </li>
-          <li>
-              <a href="#logo">Logo</a>
-          </li>
-          <li>
-              <a href="#typo">Typografi</a>
-          </li>
-          <li>
-              <a href="#color">Farver</a>
-          </li>
-          <li>
-              <a href="#navi">Navigation</a>
-          </li>
-          <li>
-              <a href="#btns">Knapper</a>
-          </li>
-          <li>
-              <a href="#icons">Ikoner</a>
-          </li>
-      </ul>
-
-      <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-      </div>
-  </nav>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</nav>
 
   <!-- End of Nav -->
 
@@ -87,7 +84,8 @@
       </div>
 
       <div class="logo-text2">
-          <b>Anvendelse:</b> Logo skal bruges på alle siderne, placeret til venstre i navigationsbaren.
+          <b>Anvendelse:</b> Logo skal bruges på alle relevente sider. 
+          Logoet skal placeret til venstre, øverste hjørne på forsiden.
       </div>
 
       <div class="code-box-logo1">
@@ -288,8 +286,8 @@ html {
         </div>
 
         <div class="navi-text">
-            <b> Anvendelse:</b> Navigationsbaren kommer til til højre på alle siderne, da den skal hjælpe brugeren
-                med at navigere rundt. Navagationsbaren indeholder 5 punkter, der hver fører til en seperat side.
+            <b> Anvendelse:</b> Navigationsbaren kommer til at være til højre på alle siderne, da den skal hjælpe brugeren
+                med at navigere rundt. Navagationsbaren indeholder 6 punkter, der hver fører til en separat side.
                 Som f.eks. vores 3D manual side, hvor man som bruger kan få en gennemgang af kipgryden og alle dens
                 funktioner.
         </div>
@@ -494,37 +492,39 @@ body {
     <section id="btns">
 
       <div class="btns-head">
-          <h2>Knapper</h2>
-          <div class="btns-line">
+        <h2>Knapper</h2>
+        <div class="btns-line">
+          <div class="btns-showcase">
             <div class="hero-btn2">
-                <a href="brugermanual/index.html">
-                    <button class="hero-button2"><span>Se hvordan kipgryden fungerer</span></button>
-                </a>
-            </div>
-
-            <div class="manual-btn2">
-                <a href="manual.html">
-                    <button class="manual-button2"><span>Se 3D manualen</span></button>
-                </a>
-            </div>
-
-            <div class="POI one hidden" onclick="runVid1()">
-                <p>1</p>
-            </div>
-
-            <a href="https://norqi.wp.side-walk.dk/artikler/">
+              <a href="brugermanual/index.html">
+                  <button class="hero-button2"><span>Se vores 3D manual</span></button>
+              </a>
+              </div>
+              
+              <div class="manual-btn2">
+              <a href="brugermanual/index.html">
+                  <button class="manual-button2"><span>Se 3D manualen</span></button>
+              </a>
+              </div>
+              
+              <div class="POI one hidden" onclick="runVid1()">
+              <p>1</p>
+              </div>
+              
+              <div>
+              <a href="https://norqi.wp.side-walk.dk/artikler/">
                 <img class="btn-arrow" src="img/btn-arrow.png" alt="case-btn">
-            </a>
-
-        </div>
+              </a>
+              </div>          </div>
       </div>
+    </div>
 
-        <div class="btns-text">
-            <b>Anvendelse:</b> Knapperne anvendes på alle siderne. De bruges til at føre brugeren hen til vores 3D manual,
-            samt guide brugeren igennem manualen.
-        </div>
-
-        <div class="code-box-btns1">
+      <div class="btns-text">
+        <b>Anvendelse:</b> Knapperne anvendes på alle siderne. De bruges til at føre brugeren hen til vores 3D manual,
+        samt guide brugeren igennem manualen.
+      </div>
+      
+      <div class="code-box-btns1">
             <h1>Code Snippet (HTML):</h1>
             <pre>
                 <code class="code">
@@ -658,132 +658,6 @@ body {
 
     </section>
     <!-- End of Buttons Section -->
-
-    <!-- Icon Section -->
-    <section id="icons">
-
-        <div class="icons-head">
-            <h2>Ikoner</h2>
-            <div class="icons-line"></div>
-        </div>
-
-        <div class="icon_1">
-            <img src="img/icon_kipgryder.svg" alt="case 1">
-        </div>
-
-        <div class="icon_2">
-            <img src="img/icon_kipstegere.svg" alt="case 1">
-        </div>
-
-        <div class="icon_3">
-            <img src="img/icon_kogeborde.svg" alt="case 1">
-        </div>
-
-        <div class="icon_4">
-            <img src="img/instagram.png" alt="case 1">
-        </div>
-
-        <div class="icon_5">
-            <img src="img/facebook.png" alt="case 1">
-        </div>
-
-        <div class="icon_6">
-            <img src="img/linkedin.png" alt="case 1">
-        </div>
-
-        <div class="icons-text">
-            <b>Anvendelse:</b> Ikonerne af NORQi's produkter er på forsiden, hvorfra man kan komme
-                              videre ind og læse omkring produkterne. SoMe ikonerne er på alle sider i footeren.
-                              Ikonerne hjælper brugeren med at finde det de leder efter.
-        </div>
-
-        <div class="code-box-icons1">
-            <h1>Code Snippet (HTML):</h1>
-            <pre>
-                <code class="code">
-
-&lt;div class="icon_1"&gt;
-  &lt;img src="img/icon_kipgryder.svg" alt="case 1"&gt;
-&lt;/div&gt;
-
-&lt;div class="icon_2"&gt;
-  &lt;img src="img/icon_kipstegere.svg" alt="case 1"&gt;
-&lt;/div&gt;
-
-&lt;div class="icon_3"&gt;
-  &lt;img src="img/icon_kogeborde.svg" alt="case 1"&gt;
-&lt;/div&gt;
-
-&lt;div class="icon_4"&gt;
-  &lt;img src="img/instagram.png" alt="case 1"&gt;
-&lt;/div&gt;
-
-&lt;div class="icon_5"&gt;
-  &lt;img src="img/facebook.png" alt="case 1"&gt;
-&lt;/div&gt;
-
-&lt;div class="icon_6"&gt;
-  &lt;img src="img/linkedin.png" alt="case 1"&gt;
-&lt;/div&gt;
-
-                </code>
-            </pre>
-        </div>
-
-        <div class="code-box-icons2">
-            <h1>Code Snippet (CSS):</h1>
-            <pre>
-                <code class="code">
-.icon_1 img{
-  width: 30%;
-  position: relative;
-  bottom: 150px;
-}
-
-.icon_2 img{
-  width: 30%;
-  position: relative;
-  bottom: 400px;
-  left: -400px;
-}
-
-.icon_3 img{
-  width: 30%;
-  position: relative;
-  bottom: 650px;
-  left: 380px;
-}
-
-.icon_4 img{
-  width: 20%;
-  position: relative;
-  bottom: 430px;
-  left: -500px;
-}
-
-.icon_5 img{
-  width: 20%;
-  position: relative;
-  bottom: 655px;
-  left: 245px;
-}
-
-.icon_6 img{
-  width: 20%;
-  position: relative;
-  bottom: 655px;
-  left: -190px;
-}
-                </code>
-            </pre>
-        </div>
-
-
-
-    </section>
-    <!-- End of Icon Section -->
-
-
 
 </body>
 <script src="styleguide.js"></script>
