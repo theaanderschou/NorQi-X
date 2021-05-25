@@ -216,7 +216,42 @@ Der går ca. 30 sekunder før systemet og dermed skærmen er klar til drift.</p>
 
 function runVid3() {
 
-    infoTitle.innerHTML = "<span>03</span> Induktionsgryde";
+    infoTitle.innerHTML = "<span>03</span> Kipsystem";
+    
+    infoText.innerHTML = `
+
+<div onclick="dropDown()" class="info-dropdown-header">Smørepunkt:<img class="dropdown-arrow" src="img/arrow-white.svg"></div>
+    <div class="info-dropdown-content">
+        <p>Kontroller motoren kører jævnt og uden mislyde. Kom lidt fedt på glidefladerne.</p>
+<img src="img/smoerepunkt.png">
+<p>Smørepunkt på begge sider af kiparmen.</p>
+    </div>
+
+<div onclick="dropDown()" class="info-dropdown-header">Frekvensomformer:<img class="dropdown-arrow" src="img/arrow-white.svg"></div>
+    <div class="info-dropdown-content">
+        <p>Bank let på omformeren og observer løse dele.
+Check for korrosion på terminaler EMC plade etc.<br>
+Check for aflejringer af snavs. Rengør Kontroller moment på forbindelser. Se el-diagram Overvågning af SlowMix hastighed. Kontrolleres via servicemenu i PLC.<br>
+Frekvensomformeren skal gå i fejltilstand og vise ’SAFE’ i displayet. For nulstilling
+afbryd forsyning til omformer på automatsikringen eller forsyningsadskiller.</p>
+    </div>
+
+<div onclick="dropDown()" class="info-dropdown-header">Vandtilslutning:<img class="dropdown-arrow" src="img/arrow-white.svg"></div>
+    <div class="info-dropdown-content">
+        <p>Kontroller for lækage. Korriger i givet fald.<br>
+Hvis gryden er forsynet med spulepistol kontrolleres rørafbryder i den faste installation.</p>
+    </div>
+
+<div onclick="dropDown()" class="info-dropdown-header">Hvert andet år:<img class="dropdown-arrow" src="img/arrow-white.svg"></div>
+    <div class="info-dropdown-content">
+        <p>Udskift batteri i PLC<br>
+Batteritype: Panasonic BR2032<br>
+Batteriet benyttes kun til back up for det indbyggede ur.</p>
+
+    </div>
+
+
+`;
 
     source.setAttribute('src', 'video/inside.mp4');
     video.load();
