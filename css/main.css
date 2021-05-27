@@ -1031,7 +1031,7 @@ video {
     box-shadow: 0 0 10px var(--accent);
     cursor: pointer;
     background: rgba(255, 255, 255, 1);
-    z-index: 2;
+    z-index: 10;
 }
 
 .POI:hover {
