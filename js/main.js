@@ -4,7 +4,7 @@ const navslide = () => {
     const nav = document.querySelector('NAV');
     const navLinks = document.querySelectorAll('.nav-links li');
 
-    burger.addEventListener('click',()=>{
+    burger.addEventListener('click', () => {
         //Toggle Nav
         nav.classList.toggle('nav-active');
 
@@ -12,7 +12,7 @@ const navslide = () => {
         navLinks.forEach((link, index) => {
             if (link.style.animation) {
                 link.style.animation = ''
-            }else{
+            } else {
                 link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
             }
         });
@@ -27,45 +27,81 @@ navslide();
 
 
 
+// Alt i indrykket kører så snart hjemmesiden er loaded
 
 // Manual subpage JS starts here ::
 
+// Variabel der finder et element med ID'et video
 var video = document.getElementById('video');
+
+// Variabel som skaber et nyt element i dette tilfælde et source element
 var source = document.createElement('source');
+
+// Variabel der finder et element med ID'et infobox
 var infobox = document.getElementById("infobox");
+
+// Variabel der finder alle elementer med classen POI - Points of interest
+// Putter dem alle i et array som husker på alle elementerne
 var POIS = document.querySelectorAll(".POI");
 
+
+
+// Tilføjer en attribut på vores source element med værdien "src="video/default-stance.mp4""
 source.setAttribute('src', 'video/default-stance.mp4');
 
+// Tilføjer et barn i vores #video
 video.appendChild(source);
+
+// Afspiller vores video
 video.play();
 
 
+
+
+
+
 // Shows Points Of Interests when video is done playing
+
+// *Så snart hele siden er loaded skal denne funktion køre
 window.onload = function () {
+    // *Sæt en forsinkelse inden denne funktion køres
     setTimeout(function () {
+        // *Kør funktionen showPOI
         showPOI()
+        // Forsinkelsen inden funktionen bliver kørt i ms
     }, 2800);
 };
 
 
+
+
+
 // Function that removes the hidden class from POI's
+
 function showPOI() {
+    // For-loop, I = 0, så længe I er mindre end antallet af POIS, skal I + 1
     for (i = 0; i < POIS.length; i++) {
+        // De hårde brackets betyder at det er inde i et array
+        // POI nr. I skal have fjernet classen hidden fra sin classlist
         POIS[i].classList.remove("hidden");
     }
-
-
 }
 
 // Function that hides POI's
+
+// Stort set samme funktion som tidligere, denne tilføjer bare hidden classen til POIS
 function hidePOI() {
     for (i = 0; i < POIS.length; i++) {
         POIS[i].classList.add("hidden");
     }
 }
 
+
+
+
+
 // Show infobox with text about the selected POI
+
 function showInfo() {
     infobox.classList.add("active");
 
@@ -84,18 +120,27 @@ function hideInfo() {
 
 
 // Cross exits infobox and sets video to it's default stance
-function defaultStance() {
 
+function defaultStance() {
+    // Variablel der skaffer sourcens source
     var replaceSource = source.src;
 
+    // Hvis vores infobox indeholder classen FAQ, skal der ikke køres nogen video efter luk
     if (infobox.classList.contains("faq")) {
+
+        // Så fjern infoboxen
         hideInfo()
+        // Og fjern FAQ classen
         infobox.classList.remove("faq");
+
+        // Hvis ikke
     } else {
+
+        // Tag sourcens source og udskift mp4 med -reverse.mp4
         source.setAttribute('src', replaceSource.replace(".mp4", "-reverse.mp4"));
         video.load();
         video.play();
-
+        // Fjern infoboxen
         hideInfo()
     }
 
@@ -104,7 +149,7 @@ function defaultStance() {
 
 
 
-
+/* Tidligere dropdown funktion som ikke virkede som den skulle
 function dropdownMainMenu() {
 
     var dropdownArea = document.querySelectorAll(".info-dropdown-header");
@@ -121,7 +166,7 @@ function dropdownMainMenu() {
 
 
 }
-
+*/
 
 function dropDown(elem) {
 
