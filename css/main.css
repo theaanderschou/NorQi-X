@@ -22,6 +22,10 @@ a {
     color: black;
 }
 
+p {
+    line-height: 1.4;
+}
+
 :root {
     --accent: #5cb720;
 }
@@ -228,7 +232,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .hero-title {
@@ -280,6 +284,7 @@ body {
         height: 160%;
         min-width: 130%;
     }
+
     .hero-button {
         height: inherit;
         width: inherit;
@@ -312,6 +317,7 @@ body {
         width: 45%;
         height: inherit;
     }
+
     .hero-button {
         bottom: 0;
     }
@@ -394,7 +400,7 @@ body {
 
 /* PRODUCT DRAWING SECTION */
 #product-drawings {
-    height: 130vh;
+    height: 115vh;
     width: 100%;
 }
 
@@ -467,6 +473,9 @@ body {
 .product-text a:hover {
     color: #458a18;
     text-decoration: underline;
+}
+
+
 }
 
 @media only screen and (max-width: 979px) {
@@ -653,19 +662,15 @@ body {
         top: 45%;
         left: 50%;
     }
-    
+
     .manual-button {
-    height: 40px;
-    width: 250px;
-    font-size: 12px;
+        height: 40px;
+        width: 250px;
+        font-size: 12px;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
     }
-    
-    .manual-btn {
-    margin: 0;
-}
 }
 
 
@@ -801,13 +806,15 @@ body {
 
 @media only screen and (max-width: 979px) {
     #cases {
-    height: 250vh;
-}
+        height: 250vh;
+    }
+
     .case {
         width: 75%;
         margin-bottom: 50px;
         height: 80%;
     }
+
     .case-btn-wrapper {
         bottom: 40px;
     }
@@ -885,11 +892,11 @@ body {
         left: 50%;
         transform: translateX(-50%);
     }
-    
+
     .statement-container p {
         font-size: 16px;
     }
-    
+
     #statements {
         height: 90vh;
     }
@@ -963,10 +970,12 @@ body {
     #instagram-gallery {
         height: inherit;
     }
+
     .ig-gallery {
         height: 150px;
         position: relative;
     }
+
     .ig-gallery img {
         position: absolute;
         top: 0;
@@ -1422,5 +1431,86 @@ ol.two-columns {
 
 
 
+
+}
+
+
+
+/* Fix til mobilen */
+
+
+@media only screen and (max-width: 480px) {
+    #hero {
+        height: 100vh;
+    }
+
+    .herovid {
+        height: 100vh;
+        position: relative;
+    }
+
+
+    .herovid video {
+        height: 100vh;
+        min-width: 400%;
+    }
+
+    .hero-title {
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .hero-title img {
+        width: 80%;
+        height: inherit;
+    }
+
+    .hero-btn {
+        top: inherit;
+        bottom: 50px;
+    }
+
+    #product-drawings {
+        height: 175vh;
+    }
+
+    .model-pic img {
+        width: 100%;
+    }
+
+    #manual-section {
+        margin-top: -50px;
+        padding-bottom: 50px;
+    }
+
+    #cases {
+        height: 192vh;
+    }
+
+    .case-text h3 {
+        font-size: 20px;
+    }
+
+    .case {
+        height: 60%;
+    }
+
+
+    #customers {
+        height: 5vh;
+    }
+
+
+    .POI.faq {
+        left: 30px;
+        top: 30px;
+    }
+
+    .alert-box p {
+        position: relative;
+        max-width: 60%;
+        left: 70px;
+    }
 
 }

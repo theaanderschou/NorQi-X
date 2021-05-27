@@ -1,3 +1,35 @@
+const navslide = () => {
+    const menu = document.querySelector('.menu');
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('NAV');
+    const navLinks = document.querySelectorAll('.nav-links li');
+
+    burger.addEventListener('click',()=>{
+        //Toggle Nav
+        nav.classList.toggle('nav-active');
+
+        //Animate Links
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = ''
+            }else{
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+            }
+        });
+
+        //Burger Animation
+        burger.classList.toggle('toggle');
+    });
+
+}
+
+navslide();
+
+
+
+
+// Manual subpage JS starts here ::
+
 var video = document.getElementById('video');
 var source = document.createElement('source');
 var infobox = document.getElementById("infobox");
@@ -161,12 +193,6 @@ funktioner og kommer derved ind i standardmenuen for funktionen, hvor de
 forskellige variable vælges.
 I gryder uden omrører mangler også funktionen køling og opvarmning efter
 madtemperaturen.</p>
-    </div>
-
-<div onclick="dropDown()" class="info-dropdown-header">Svinebøf:<img class="dropdown-arrow" src="img/arrow-white.svg"></div>
-    <div class="info-dropdown-content">
-        
-        
     </div>
 
 <br>
@@ -342,36 +368,3 @@ man hælder vand i varm olie</p>
     showInfo();
 
 }
-
-
-
-
-
-/*
-var vid1 = document.getElementById("vid1");
-var vid2 = document.getElementById("vid2");
-
-var vidSrc = document.querySelector("#video-container SOURCE");
-
-function runVid1() {
-    vidSrc.source = "asd"
-    console.log("asd")
-}
-
-function runVid2() {
-    
-}*/
-
-// Klik på vid - skift video og fremvis info
-
-// Klik på luk - reverser video og lukker info fane
-
-// Burger menu
-
-// Modal
-
-
-
-
-
-// SEO
