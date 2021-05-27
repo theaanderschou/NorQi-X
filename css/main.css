@@ -50,7 +50,7 @@ nav {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 5;
+    z-index: 15;
     transition: all 0.3s ease;
 }
 
@@ -473,9 +473,6 @@ body {
 .product-text a:hover {
     color: #458a18;
     text-decoration: underline;
-}
-
-
 }
 
 @media only screen and (max-width: 979px) {
