@@ -103,8 +103,9 @@ function hidePOI() {
 // Show infobox with text about the selected POI
 
 function showInfo() {
+    // Tilføjer 'active' til infoboxens classlist
     infobox.classList.add("active");
-
+    // Fjerner POIs
     hidePOI()
 }
 
@@ -112,6 +113,7 @@ function showInfo() {
 function hideInfo() {
     infobox.classList.remove("active");
 
+    // Forsinkelse -> inde i den kører en funktion
     setTimeout(function () {
         showPOI()
     }, 3000); // Delay all videoes so far are 3000ms
