@@ -102,7 +102,7 @@ body {
     left: -400px;
     height: 100vh;
     top: 17vh;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: right;
     width: 100%;
@@ -111,6 +111,11 @@ body {
     font-size: 0.875rem;
     list-style: none;
 }
+
+.nav-active .nav-links {
+    display: flex;
+}
+
 
 .nav-links li {
     opacity: 0;
