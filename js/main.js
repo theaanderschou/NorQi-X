@@ -31,28 +31,20 @@ navslide();
 
 // Manual subpage JS starts here ::
 
-// Variabel der finder et element med ID'et video
 var video = document.getElementById('video');
 
-// Variabel som skaber et nyt element i dette tilfælde et source element
 var source = document.createElement('source');
 
-// Variabel der finder et element med ID'et infobox
 var infobox = document.getElementById("infobox");
 
-// Variabel der finder alle elementer med classen POI - Points of interest
-// Putter dem alle i et array som husker på alle elementerne
 var POIS = document.querySelectorAll(".POI");
 
 
 
-// Tilføjer en attribut på vores source element med værdien "src="video/default-stance.mp4""
 source.setAttribute('src', 'video/default-stance.mp4');
 
-// Tilføjer et barn i vores #video
 video.appendChild(source);
 
-// Afspiller vores video
 video.play();
 
 
@@ -62,13 +54,9 @@ video.play();
 
 // Shows Points Of Interests when video is done playing
 
-// *Så snart hele siden er loaded skal denne funktion køre
 window.onload = function () {
-    // *Sæt en forsinkelse inden denne funktion køres
     setTimeout(function () {
-        // *Kør funktionen showPOI
         showPOI()
-        // Forsinkelsen inden funktionen bliver kørt i ms
     }, 2800);
 };
 
@@ -79,17 +67,13 @@ window.onload = function () {
 // Function that removes the hidden class from POI's
 
 function showPOI() {
-    // For-loop, I = 0, så længe I er mindre end antallet af POIS, skal I + 1
     for (i = 0; i < POIS.length; i++) {
-        // De hårde brackets betyder at det er inde i et array
-        // POI nr. I skal have fjernet classen hidden fra sin classlist
         POIS[i].classList.remove("hidden");
     }
 }
 
 // Function that hides POI's
 
-// Stort set samme funktion som tidligere, denne tilføjer bare hidden classen til POIS
 function hidePOI() {
     for (i = 0; i < POIS.length; i++) {
         POIS[i].classList.add("hidden");
@@ -103,20 +87,16 @@ function hidePOI() {
 // Show infobox with text about the selected POI
 
 function showInfo() {
-    // Tilføjer 'active' til infoboxens classlist
     infobox.classList.add("active");
-    // Fjerner POIs
     hidePOI()
 }
 
-// Hide infobox with text
 function hideInfo() {
     infobox.classList.remove("active");
 
-    // Forsinkelse -> inde i den kører en funktion
     setTimeout(function () {
         showPOI()
-    }, 3000); // Delay all videoes so far are 3000ms
+    }, 3000);
 }
 
 
@@ -124,25 +104,18 @@ function hideInfo() {
 // Cross exits infobox and sets video to it's default stance
 
 function defaultStance() {
-    // Variablel der skaffer sourcens source
     var replaceSource = source.src;
 
-    // Hvis vores infobox indeholder classen FAQ, skal der ikke køres nogen video efter luk
     if (infobox.classList.contains("faq")) {
 
-        // Så fjern infoboxen
         hideInfo()
-        // Og fjern FAQ classen
         infobox.classList.remove("faq");
 
-        // Hvis ikke
     } else {
-
-        // Tag sourcens source og udskift mp4 med -reverse.mp4
         source.setAttribute('src', replaceSource.replace(".mp4", "-reverse.mp4"));
         video.load();
         video.play();
-        // Fjern infoboxen
+
         hideInfo()
     }
 
